@@ -43,20 +43,22 @@
 
         <nav id="nav-main" class="navbar navbar-expand-lg">
 
-          <div class="container">
+          <div class="container-fluid">
 
               <!-- Navbar Brand -->
-              <h1><a class="navbar-brand md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-              <a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.svg" alt="logo" class="logo xs"></a>
+              <a class="navbar-brand md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
+              <a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>">CPC</a>
+              <!--<a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.svg" alt="logo" class="logo xs"></a>
+              -->
               <!--
               <a class="navbar-brand md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo.svg" alt="logo" class="logo md"></a>
               -->
 
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i><span class="visually-hidden-focusable">Menu</span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
               </button>
 
-              <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <?php
                 wp_nav_menu(array(
                   'theme_location' => 'main-menu',
@@ -70,39 +72,6 @@
                 ?>
                 <!-- Bootstrap 5 Nav Walker Main Menu End -->
               </div>
-
-
-            <div class="header-actions d-flex align-items-center">
-
-              <!-- Top Nav Widget -->
-              <div class="top-nav-widget">
-                <?php if (is_active_sidebar('top-nav')) : ?>
-                  <div>
-                    <?php dynamic_sidebar('top-nav'); ?>
-                  </div>
-                <?php endif; ?>
-              </div>
-
-              <!-- Searchform Large -->
-              <div class="d-none d-lg-block ms-1 ms-md-2 top-nav-search-lg">
-                <?php if (is_active_sidebar('top-nav-search')) : ?>
-                  <div>
-                    <?php dynamic_sidebar('top-nav-search'); ?>
-                  </div>
-                <?php endif; ?>
-              </div>
-
-              <!-- Search Toggler Mobile -->
-              <button class="btn btn-outline-secondary d-lg-none ms-1 ms-md-2 top-nav-search-md" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-search" aria-expanded="false" aria-controls="collapse-search">
-                <i class="fa-solid fa-magnifying-glass"></i><span class="visually-hidden-focusable">Search</span>
-              </button>
-
-              <!-- Navbar Toggler -->
-              <!--<button class="btn btn-outline-secondary d-lg-none ms-1 ms-md-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-navbar" aria-controls="offcanvas-navbar">
-                <i class="fa-solid fa-bars"></i><span class="visually-hidden-focusable">Menu</span>
-              </button>-->
-
-            </div><!-- .header-actions -->
 
           </div><!-- .container -->
 

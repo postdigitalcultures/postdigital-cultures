@@ -16,7 +16,7 @@
 
 <footer>
 
-  <div class="bootscore-footer bg-light pt-5 pb-3">
+  <div class="bootscore-footer pt-5 pb-3">
     <div class="container">
 
       <!-- Top Footer Widget -->
@@ -55,16 +55,6 @@
           <?php endif; ?>
         </div>
 
-        <!-- Footer 4 Widget -->
-        <div class="col-md-6 col-lg-3">
-          <?php if (is_active_sidebar('footer-4')) : ?>
-            <div>
-              <?php dynamic_sidebar('footer-4'); ?>
-            </div>
-          <?php endif; ?>
-        </div>
-        <!-- Footer Widgets End -->
-
       </div>
 
       <!-- Bootstrap 5 Nav Walker Footer Menu -->
@@ -85,9 +75,11 @@
   </div>
 
   <div class="bootscore-info bg-light text-muted border-top py-2 text-center">
-    <div class="container">
-      <small>&copy;&nbsp;<?php echo Date('Y'); ?> <?php bloginfo('name'); ?> and licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License (CC BY 4.0)</a>.</small>
-    </div>
+    <?php if (is_active_sidebar('footer-4')) : ?>
+      <div class="container">
+        <small><?php dynamic_sidebar('footer-4'); ?></small>
+      </div>
+    <?php endif; ?>
   </div>
 
 </footer>
