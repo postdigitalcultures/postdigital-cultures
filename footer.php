@@ -55,6 +55,15 @@
           <?php endif; ?>
         </div>
 
+        <!-- Footer 4 Widget -->
+        <div class="col-md-6 col-lg-3">
+          <?php if (is_active_sidebar('footer-4')) : ?>
+            <div>
+              <?php dynamic_sidebar('footer-4'); ?>
+            </div>
+          <?php endif; ?>
+        </div>
+
       </div>
 
       <!-- Bootstrap 5 Nav Walker Footer Menu -->
@@ -75,9 +84,9 @@
   </div>
 
   <div class="bootscore-info bg-light text-muted border-top py-2 text-center">
-    <?php if (is_active_sidebar('footer-4')) : ?>
+    <?php if (is_active_sidebar('bottom-footer')) : ?>
       <div class="container">
-        <small><?php dynamic_sidebar('footer-4'); ?></small>
+        <small><?php dynamic_sidebar('bottom-footer'); ?></small>
       </div>
     <?php endif; ?>
   </div>
