@@ -44,39 +44,37 @@
           <div class="container-fluid">
 
               <!-- Navbar Brand -->
-              <a class="navbar-brand text-dark md d-none d-md-flex justify-content-center" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
-              <a class="navbar-brand text-dark xs d-md-none" href="<?php echo esc_url(home_url()); ?>">CPC</a>
+              <a class="navbar-brand text-dark d-none d-sm-flex" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
+              <a class="navbar-brand text-dark d-block d-sm-none" href="<?php echo esc_url(home_url()); ?>">CPC</a>
               <!--<a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.svg" alt="logo" class="logo xs"></a>
               -->
               <!--
               <a class="navbar-brand md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo.svg" alt="logo" class="logo md"></a>
               -->
 
-              <button class="navbar-toggler xs" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler d-block d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
 
             </div>
 
           </nav>
-          <nav id="nav-main" class="navbar navbar-expand-lg">
+          <nav id="nav-main" class="navbar navbar-expand-sm">
 
             <div class="container-fluid">
 
-              <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
-                <?php
-                wp_nav_menu(array(
-                  'theme_location' => 'main-menu',
-                  'container' => false,
-                  'menu_class' => '',
-                  'fallback_cb' => '__return_false',
-                  'items_wrap' => '<ul id="bootscore-navbar" class="navbar-nav%2$s">%3$s</ul>',
-                  'depth' => 2,
-                  'walker' => new bootstrap_5_wp_nav_menu_walker()
-                ));
-                ?>
-                <!-- Bootstrap 5 Nav Walker Main Menu End -->
-              </div>
+              <?php
+              wp_nav_menu(array(
+                'theme_location' => 'main-menu',
+                'container' => false,
+                'menu_class' => '',
+                'fallback_cb' => '__return_false',
+                'items_wrap' => '<ul id="navbarSupportedContent" class="collapse navbar-collapse navbar-nav justify-content-between %2$s">%3$s</ul>',
+                'depth' => 2,
+                'walker' => new bootstrap_5_wp_nav_menu_walker()
+              ));
+              ?>
+              <!-- Bootstrap 5 Nav Walker Main Menu End -->
 
           </div><!-- .container -->
 
