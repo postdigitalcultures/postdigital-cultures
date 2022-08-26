@@ -39,8 +39,6 @@
 
     <header id="masthead" class="site-header">
 
-      <div class="fixed-top bg-light">
-
         <nav id="nav-main" class="navbar navbar-expand-lg">
 
           <div class="container-fluid">
@@ -92,7 +90,5 @@
             </div>
           <?php endif; ?>
         </div>
-
-      </div><!-- .fixed-top .bg-light -->
 
     </header><!-- #masthead -->
