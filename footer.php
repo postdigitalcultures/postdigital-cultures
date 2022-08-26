@@ -16,7 +16,7 @@
 
 <footer>
 
-  <div class="bootscore-footer pt-5 pb-3">
+  <div class="bootscore-footer pt-5 pb-3 text-primary">
     <div class="container">
 
       <!-- Top Footer Widget -->
@@ -83,7 +83,7 @@
     </div>
   </div>
 
-  <div class="bootscore-info bg-light text-muted border-top py-2 text-center">
+  <div class="bootscore-info bg-light border-top py-2 text-center text-primary">
     <?php if (is_active_sidebar('bottom-footer')) : ?>
       <div class="container">
         <small><?php dynamic_sidebar('bottom-footer'); ?></small>

@@ -44,8 +44,8 @@
           <div class="container-fluid">
 
               <!-- Navbar Brand -->
-              <a class="navbar-brand md d-none d-md-flex justify-content-center" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
-              <a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>">CPC</a>
+              <a class="navbar-brand text-dark md d-none d-md-flex justify-content-center" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
+              <a class="navbar-brand text-dark xs d-md-none" href="<?php echo esc_url(home_url()); ?>">CPC</a>
               <!--<a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.svg" alt="logo" class="logo xs"></a>
               -->
               <!--
