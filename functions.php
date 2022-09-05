@@ -161,8 +161,8 @@ endif;
 if ($_SERVER["HTTP_HOST"] == 'wpxr4uoni5735l45imfd44btckt46gp4oloxcahcemv3suja7jmuayad.onion') {
 	add_filter('option_home', 'rewrite_permalinks');
 	add_filter('option_siteurl', 'rewrite_permalinks');
-	#add_filter('option_blogname', 'rewrite_blogname');
 	add_filter('bloginfo', 'rewrite_blogname');
+	add_filter('option_blogname', 'rewrite_blogname');
 	add_filter('post_link', 'rewrite_permalinks');
 	add_filter('page_link', 'rewrite_permalinks');
 	add_filter('post_type_link', 'rewrite_permalinks');
