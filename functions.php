@@ -158,7 +158,7 @@ endif;
  * Acknowledgements: https://blog.paranoidpenguin.net/2017/09/how-to-configure-wordpress-as-a-tor-hidden-service/
  */
 
-if ($_SERVER["HTTP_HOST"] == 'xtillyevakfkeubn72yqqmrrkml4uhazz3pubym5yvr3k5nh7yq7qdyd.onion') {
+if ($_SERVER["HTTP_HOST"] == 'wpxr4uoni5735l45imfd44btckt46gp4oloxcahcemv3suja7jmuayad.onion') {
 	add_filter('option_home', 'rewrite_permalinks');
 	add_filter('option_siteurl', 'rewrite_permalinks');
 	add_filter('option_blogname', 'rewrite_blogname');
@@ -191,6 +191,6 @@ function rewrite_blogname($content) {
 }
 
 function rewrite_permalinks($content) {
-	$content = preg_replace('/https?:\/\/postdigitalcultures.org/', 'http://xtillyevakfkeubn72yqqmrrkml4uhazz3pubym5yvr3k5nh7yq7qdyd.onion', $content);
+	$content = preg_replace('/https?:\/\/postdigitalcultures.org/', 'http://wpxr4uoni5735l45imfd44btckt46gp4oloxcahcemv3suja7jmuayad.onion', $content);
 	return $content;
 }
