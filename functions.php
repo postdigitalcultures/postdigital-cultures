@@ -186,7 +186,7 @@ if ($_SERVER["HTTP_HOST"] == 'wpxr4uoni5735l45imfd44btckt46gp4oloxcahcemv3suja7j
 }
 
 function rewrite_blogname($content) {
-	$content = str_replace('Centre for Postdigital Cultures', 'Centre for Postdigital Cultures: onion service', $content);
+	$content = preg_replace('/$/', ': onion service', $content);
 	return $content;
 }
 
