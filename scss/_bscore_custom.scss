@@ -20,3 +20,24 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
   float: none;
   margin: 0 auto;
 }
+
+
+img.onion {
+  max-width: 5%;
+  filter: invert(8%) sepia(98%) saturate(6823%) hue-rotate(247deg) brightness(104%) contrast(146%);
+}
+
+@media (min-width: 769px) {
+  .onion {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .onion {
+    text-align: center;
+  }
+  img.onion {
+    max-width: 10%;
+  }
+}

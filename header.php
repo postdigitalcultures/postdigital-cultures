@@ -20,6 +20,8 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="https://gmpg.org/xfn/11">
+  <!-- Onion-Location Header -->
+  <meta http-equiv="onion-location" content="http://wpxr4uoni5735l45imfd44btckt46gp4oloxcahcemv3suja7jmuayad.onion" />
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon-32x32.png">
