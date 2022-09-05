@@ -149,4 +149,51 @@ if (!function_exists('bootscore_widgets_init')) :
 
 endif;
 // Widgets END
-    // Top Footer End
+
+/**
+ * Onion service functions and definitions.
+ *
+ * Implements multi-domain support for onion domains using WordPress filter hooks.
+ *
+ * Acknowledgements: https://blog.paranoidpenguin.net/2017/09/how-to-configure-wordpress-as-a-tor-hidden-service/
+ */
+
+$clearnet_url = 'https://postdigitalcultures.org';
+$onion_url = 'xtillyevakfkeubn72yqqmrrkml4uhazz3pubym5yvr3k5nh7yq7qdyd.onion'
+
+if ($_SERVER["HTTP_HOST"] == $onion_url) {
+	add_filter('option_home', 'rewrite_permalinks');
+	add_filter('option_siteurl', 'rewrite_permalinks');
+	add_filter('option_blogname', 'rewrite_blogname');
+	add_filter('bloginfo', 'rewrite_blogname');
+	add_filter('post_link', 'rewrite_permalinks');
+	add_filter('page_link', 'rewrite_permalinks');
+	add_filter('post_type_link', 'rewrite_permalinks');
+	add_filter('category_link', 'rewrite_permalinks');
+	add_filter('tag_link', 'rewrite_permalinks');
+	add_filter('author_link', 'rewrite_permalinks');
+	add_filter('day_link', 'rewrite_permalinks');
+	add_filter('month_link', 'rewrite_permalinks');
+	add_filter('year_link', 'rewrite_permalinks');
+	add_filter('nav_menu_link_attributes', 'rewrite_permalinks');
+	add_filter('includes_url', 'rewrite_permalinks');
+	add_filter('content_url', 'rewrite_permalinks');
+	add_filter('admin_url', 'rewrite_permalinks');
+	add_filter('feed_link', 'rewrite_permalinks');
+	add_filter('stylesheet_uri', 'rewrite_permalinks');
+	add_filter('attachment_link', 'rewrite_permalinks');
+	add_filter('wp_get_attachment_image_src', 'rewrite_permalinks');
+	add_filter('wp_get_attachment_link', 'rewrite_permalinks');
+	add_filter('the_excerpt', 'rewrite_permalinks');
+	add_filter('the_content', 'rewrite_permalinks');
+}
+
+function rewrite_blogname($content) {
+	$content = str_replace($clearnet_url, 'http://' . $onion_url, $content);
+	return $content;
+}
+
+function rewrite_permalinks($content) {
+	$content = preg_replace($clearnet_url, 'http://' . $onion_url, $content);
+	return $content;
+}
