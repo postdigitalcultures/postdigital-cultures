@@ -83,13 +83,13 @@
     </div>
   </div>
 
-  <div class="bootscore-info bg-light border-top py-2 text-center text-primary">
+  <div class="bootscore-info bg-light py-2 text-center text-primary">
     <?php if (is_active_sidebar('bottom-footer')) : ?>
       <div class="container">
         <small><?php dynamic_sidebar('bottom-footer'); ?></small>
         <div class="row">
           <div class="col-md-12 onion">
-            <a href="http://wpxr4uoni5735l45imfd44btckt46gp4oloxcahcemv3suja7jmuayad.onion">
+            <a href="http://testing.onion">
               <img class="onion" aria-label="Link to onion service version" src="<?php echo get_stylesheet_directory_uri(); ?>/img/onion-svgrepo-com.svg">
             </a>
           </div>
