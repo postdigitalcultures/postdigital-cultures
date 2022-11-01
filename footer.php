@@ -75,7 +75,6 @@
       <!-- Bootstrap 5 Nav Walker Footer Menu End -->
 
     </div>
-  </div>
 
   <div class="bootscore-info bg-light py-2 text-center text-primary">
     <?php if (is_active_sidebar('bottom-footer')) : ?>
