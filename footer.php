@@ -17,50 +17,48 @@
 <footer>
 
   <div class="bootscore-footer pt-5 pb-3 text-primary">
-    <div class="container m-0">
 
-      <!-- Top Footer Widget -->
-      <?php if (is_active_sidebar('top-footer')) : ?>
-        <div>
-          <?php dynamic_sidebar('top footer'); ?>
-        </div>
-      <?php endif; ?>
-
-      <div class="row">
-
-        <!-- CPC logo -->
-        <div class="d-none d-md-block col-md-6 col-lg-3 pe-5">
-          <img class="img-fluid" aria-label="Home" alt="CPC logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/cpc_logo.svg">
-        </div>
-
-        <!-- Footer 2 Widget -->
-        <div class="col-md-6 col-lg-3">
-          <?php if (is_active_sidebar('footer-2')) : ?>
-            <div>
-              <?php dynamic_sidebar('footer-2'); ?>
-            </div>
-          <?php endif; ?>
-        </div>
-
-        <!-- Footer 3 Widget -->
-        <div class="col-md-6 col-lg-3">
-          <?php if (is_active_sidebar('footer-3')) : ?>
-            <div>
-              <?php dynamic_sidebar('footer-3'); ?>
-            </div>
-          <?php endif; ?>
-        </div>
-
-        <!-- Footer 4 Widget -->
-        <div class="col-md-6 col-lg-3">
-          <?php if (is_active_sidebar('footer-4')) : ?>
-            <div>
-              <?php dynamic_sidebar('footer-4'); ?>
-            </div>
-          <?php endif; ?>
-        </div>
-
+    <!-- Top Footer Widget -->
+    <?php if (is_active_sidebar('top-footer')) : ?>
+      <div>
+        <?php dynamic_sidebar('top footer'); ?>
       </div>
+    <?php endif; ?>
+
+    <div class="d-md-flex flex-md-row mb-3">
+      <!-- Footer 1 Widget -->
+      <div class="me-auto p-2">
+        <?php if (is_active_sidebar('footer-1')) : ?>
+          <div>
+            <?php dynamic_sidebar('footer-1'); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <!-- Footer 2 Widget -->
+      <div class="p-2 pe-5">
+        <?php if (is_active_sidebar('footer-2')) : ?>
+          <div>
+            <?php dynamic_sidebar('footer-2'); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <!-- Footer 3 Widget -->
+      <div class="p-2 pe-5">
+        <?php if (is_active_sidebar('footer-3')) : ?>
+          <div>
+            <?php dynamic_sidebar('footer-3'); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <!-- Footer 4 Widget -->
+      <div class="p-2 pe-5">
+        <?php if (is_active_sidebar('footer-4')) : ?>
+          <div>
+            <?php dynamic_sidebar('footer-4'); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+    </div>
 
       <!-- Bootstrap 5 Nav Walker Footer Menu -->
       <?php
