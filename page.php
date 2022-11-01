@@ -27,7 +27,7 @@ get_header();
 
         <main id="main" class="site-main">
 
-          <header class="entry-header">
+          <header class="entry-header text-secondary">
             <?php the_post(); ?>
             <!-- Title -->
             <?php the_title('<h1>', '</h1>'); ?>

@@ -43,29 +43,28 @@
 
     <header id="masthead" class="site-header">
 
-        <nav id="nav-main" class="navbar navbar-expand-lg">
+        <nav id="nav-main" class="navbar navbar-expand-md">
 
           <div class="container-fluid">
 
               <!-- Navbar Brand -->
-              <a class="navbar-brand text-dark d-none d-sm-flex" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
-              <a class="navbar-brand text-dark d-block d-sm-none" href="<?php echo esc_url(home_url()); ?>">CPC</a>
+              <a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>">
+                <img class="img-fluid" style="height: 60px;" aria-label="Home" alt="CPC logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/cpc_logo.svg">
+              </a>
+              <a class="navbar-brand text-dark md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>">
+                <span class="logo-first">Centre for</span>
+                <span class="logo-second">Postdigital</span>
+                <span>Cultures</span>
+              </a>
               <!--<a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.svg" alt="logo" class="logo xs"></a>
               -->
               <!--
               <a class="navbar-brand md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo.svg" alt="logo" class="logo md"></a>
               -->
 
-              <button class="navbar-toggler d-block d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-
-            </div>
-
-          </nav>
-          <nav id="nav-main" class="navbar navbar-expand-sm">
-
-            <div class="container-fluid">
 
               <?php
               wp_nav_menu(array(

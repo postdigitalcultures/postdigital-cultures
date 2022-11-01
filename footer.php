@@ -17,7 +17,7 @@
 <footer>
 
   <div class="bootscore-footer pt-5 pb-3 text-primary">
-    <div class="container">
+    <div class="container m-0">
 
       <!-- Top Footer Widget -->
       <?php if (is_active_sidebar('top-footer')) : ?>
@@ -28,13 +28,9 @@
 
       <div class="row">
 
-        <!-- Footer 1 Widget -->
-        <div class="col-md-6 col-lg-3">
-          <?php if (is_active_sidebar('footer-1')) : ?>
-            <div>
-              <?php dynamic_sidebar('footer-1'); ?>
-            </div>
-          <?php endif; ?>
+        <!-- CPC logo -->
+        <div class="d-none d-md-block col-md-6 col-lg-3 pe-5">
+          <img class="img-fluid" aria-label="Home" alt="CPC logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/cpc_logo.svg">
         </div>
 
         <!-- Footer 2 Widget -->
