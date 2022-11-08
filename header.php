@@ -79,6 +79,33 @@
               ?>
               <!-- Bootstrap 5 Nav Walker Main Menu End -->
 
+            <div class="md d-none d-md-block header-actions d-flex align-items-center">
+
+              <!-- Top Nav Widget -->
+              <div class="top-nav-widget">
+                <?php if (is_active_sidebar('top-nav')) : ?>
+                  <div>
+                    <?php dynamic_sidebar('top-nav'); ?>
+                  </div>
+                <?php endif; ?>
+              </div>
+
+              <!-- Searchform Large -->
+              <div class="ms-1 ms-md-2 top-nav-search-xs ps-5">
+                <?php if (is_active_sidebar('top-nav-search')) : ?>
+                  <div>
+                    <?php dynamic_sidebar('top-nav-search'); ?>
+                  </div>
+                <?php endif; ?>
+              </div>
+
+              <!-- Search Toggler Mobile -->
+              <button class="btn btn-outline-secondary d-none ms-1 ms-md-2 top-nav-search-md" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-search" aria-expanded="false" aria-controls="collapse-search">
+                <i class="fa-solid fa-magnifying-glass"></i><span class="visually-hidden-focusable">Search</span>
+              </button>
+
+            </div><!-- .header-actions -->
+
           </div><!-- .container -->
 
         </nav><!-- .navbar -->

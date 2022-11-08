@@ -36,7 +36,7 @@ get_header();
             <!-- .entry-header -->
           </header>
 
-          <div class="entry-content">
+          <div class="entry-content px-5">
             <!-- Content -->
             <?php the_content(); ?>
             <!-- .entry-content -->
