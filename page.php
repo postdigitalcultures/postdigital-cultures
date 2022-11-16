@@ -27,8 +27,15 @@ get_header();
 
         <main id="main" class="site-main">
 
-          <header class="entry-header text-secondary">
+          <header class="entry-header">
             <?php the_post(); ?>
+            <!-- Parent page title -->
+            <div class="parent-page-title text-secondary">
+              <?php
+                $parent_title = get_the_title($post->post_parent);
+                echo $parent_title;
+              ?>
+            </div>
             <!-- Title -->
             <?php the_title('<h1>', '</h1>'); ?>
             <!-- Featured Image-->

@@ -8,7 +8,7 @@
 
 .nav-link {
   font-style: normal;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 35px;
   text-align: center;
   text-transform: uppercase;
@@ -50,10 +50,15 @@
 
 .entry-header {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 105.99%;
   /* or 32px */
-  text-transform: uppercase;
+  text-transform: capitalize;
+}
+
+.parent-page-title {
+  padding-left: 10%;
+  padding-bottom: 50px;
   text-transform: uppercase;
 }
 
@@ -74,6 +79,26 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
 
 h1 {
   font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 150px;
+  line-height: 167px;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+h1 {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 105.99%;
+  text-transform: uppercase;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.entry-content.h1 {
+  font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -87,7 +112,7 @@ h2.widget-title.h4 {
   font-family: 'Work Sans';
   font-style: italic;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 64px;
   /* or 213% */
 }
@@ -109,6 +134,7 @@ time.wp-block-latest-posts__post-date {
 
 .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date {
   display: inline-block;
+  font-size: 20px;
 }
 
 .wp-block-latest-posts li {
@@ -140,12 +166,12 @@ img.onion {
 }
 
 .collapseomatic {
-    background-image: none;
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.2) 52.25%, #0000FF 100%);
     padding: 30px 0 30px 0;
     border-bottom: 2px solid #000000;
     font-style: italic;
     font-weight: 300;
-    font-size: 54px;
+    font-size: 27px;
     line-height: 52px;
     display: block;
 }
