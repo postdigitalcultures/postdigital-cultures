@@ -52,9 +52,8 @@
                 <img class="img-fluid" style="height: 60px;" aria-label="Home" alt="CPC logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/cpc_logo.svg">
               </a>
               <a class="navbar-brand text-dark md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>">
-                <span class="logo-first">Centre for</span>
-                <span class="logo-second">Postdigital</span>
-                <span>Cultures</span>
+                <div id="logo-first">Centre for</div>
+                <div><span id="logo-second">Postdigital</span> Cultures</div>
               </a>
               <!--<a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>"><img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/logo-sm.svg" alt="logo" class="logo xs"></a>
               -->
@@ -72,7 +71,7 @@
                 'container' => false,
                 'menu_class' => '',
                 'fallback_cb' => '__return_false',
-                'items_wrap' => '<ul id="navbarSupportedContent" class="collapse navbar-collapse navbar-nav justify-content-between %2$s">%3$s</ul>',
+                'items_wrap' => '<ul id="navbarSupportedContent" class="collapse navbar-collapse navbar-nav %2$s">%3$s</ul>',
                 'depth' => 2,
                 'walker' => new bootstrap_5_wp_nav_menu_walker()
               ));

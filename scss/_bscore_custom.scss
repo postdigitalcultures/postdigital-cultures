@@ -25,7 +25,11 @@
   color: #000000;
 }
 
-.logo-first {
+a.navbar-brand.text-dark.md.d-none.d-md-block {
+    font-size: 35px;
+}
+
+#logo-first {
   transform: rotate(90deg);
   /* Legacy vendor prefixes that you probably don't need... */
   /* Safari */
@@ -38,14 +42,30 @@
   -o-transform: rotate(90deg);
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  padding-top: 135px;
+  display: inline-block;
 }
 
-.logo-second {
-  font-weight: 800;
+#logo-second {
+  font-weight: 900;
+  display: inline-block;
 }
 
 #masthead {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 46.88%, #0000FF 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 70%, #0000FF 100%);
+}
+
+@media (min-width: 768px){
+  #navbarSupportedContent {
+    position: absolute;
+    left: 5%;
+    top: 23%;
+  }
+  .top-nav-search {
+    position: absolute;
+    left: 80%;
+    top: 25%;
+  }
 }
 
 .entry-header {
