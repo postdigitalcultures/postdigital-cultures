@@ -31,6 +31,48 @@
   padding-top: 30px;
 }
 
+// HEADINGS
+
+h1 {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 150px;
+  line-height: 167px;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.entry-content h1 {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 105.99%;
+  text-transform: uppercase;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+h2.widget-title.h4 {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 64px;
+  /* or 213% */
+}
+
+h2 {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 105.99%;
+  text-transform: uppercase;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
 // NAVBAR
 
 .nav-link {
@@ -149,7 +191,7 @@ img.onion {
 hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
   opacity: 1.0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
-  height: 336px;
+  height: 140px;
   border-top: 0px;
   border-bottom: 0px;
   position: relative;
@@ -203,31 +245,3 @@ border-bottom: 2px solid #000000;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 46.88%, #0000FF 100%);
 }
 
-h1 {
-  font-family: 'Work Sans';
-  font-style: italic;
-  font-weight: 300;
-  font-size: 150px;
-  line-height: 167px;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
-}
-
-.entry-content h1 {
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 105.99%;
-  text-transform: uppercase;
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
-}
-
-h2.widget-title.h4 {
-  font-family: 'Work Sans';
-  font-style: italic;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 64px;
-  /* or 213% */
-}
