@@ -188,6 +188,8 @@ img.onion {
   font-style: italic;
   font-size: 30px;
   line-height: 46px;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  text-decoration: none;
 }
 
 .wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-bottom {
