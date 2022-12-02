@@ -35,7 +35,7 @@
         <?php endif; ?>
       </div>
       <!-- Footer 2 Widget -->
-      <div class="p-2 ps-5 pe-5">
+      <div class="p-2 px-5">
         <?php if (is_active_sidebar('footer-2')) : ?>
           <div>
             <?php dynamic_sidebar('footer-2'); ?>
@@ -43,7 +43,7 @@
         <?php endif; ?>
       </div>
       <!-- Footer 3 Widget -->
-      <div class="p-2 ps-5 pe-5">
+      <div class="p-2 px-5">
         <?php if (is_active_sidebar('footer-3')) : ?>
           <div>
             <?php dynamic_sidebar('footer-3'); ?>
@@ -51,7 +51,7 @@
         <?php endif; ?>
       </div>
       <!-- Footer 4 Widget -->
-      <div class="p-2 ps-5 pe-5">
+      <div class="p-2 px-5">
         <?php if (is_active_sidebar('footer-4')) : ?>
           <div>
             <?php dynamic_sidebar('footer-4'); ?>

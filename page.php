@@ -33,7 +33,9 @@ get_header();
             <div class="parent-page-title text-secondary">
               <?php
                 $parent_title = get_the_title($post->post_parent);
-                echo $parent_title;
+                $title = get_the_title($post);
+                if ($parent_title != $title)
+                  echo $parent_title;
               ?>
             </div>
             <!-- Title -->
