@@ -6,10 +6,22 @@
 // Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
 // Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
 
-// UNIVERSAL
+// DESKTOP UNIVERSAL
 
 #content {
   max-width: 1920px;
+}
+
+pre {
+  padding: 0rem;
+}
+
+// MOBILE VIEW UNIVERSAL
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10.5px;
+  }
 }
 
 // COLLAPSIBLE TEXT
@@ -23,7 +35,7 @@
   font-size: 27px;
   line-height: 52px;
   display: block;
-  width: 150%;
+  width: 122%;
   position: relative;
   right: 20%;
   padding-left: 20%;
@@ -38,7 +50,7 @@
   font-size: 27px;
   line-height: 52px;
   display: block;
-  width: 150%;
+  width: 122%;
   position: relative;
   right: 20%;
   padding-left: 20%;
@@ -56,16 +68,23 @@ h1 {
   font-family: 'Work Sans';
   font-style: italic;
   font-weight: 300;
-  font-size: 150px;
+  font-size: 9.5rem;
   line-height: 167px;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 58px;
+    line-height: 69.9px;
+  }
 }
 
 .entry-content h1 {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 105.99%;
   text-transform: uppercase;
   --bs-text-opacity: 1;
@@ -77,17 +96,23 @@ h2.widget-title.h4 {
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
-  line-height: 64px;
-  /* or 213% */
+  text-transform: capitalize;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
 h2 {
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 300;
-  padding-bottom: 50px;
+  padding-bottom: 1.875rem;
   text-transform: uppercase;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    padding-bottom: 0rem;
+  }
 }
 
 // NAVBAR
@@ -165,7 +190,7 @@ img.onion {
   /*filter: invert(8%) sepia(98%) saturate(6823%) hue-rotate(247deg) brightness(104%) contrast(146%);*/
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .onion {
     text-align: center;
   }
@@ -214,12 +239,12 @@ img.onion {
 hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
   opacity: 1.0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
-  height: 140px;
-  border-top: 0px;
-  border-bottom: 0px;
+  height: 8.75rem;
+  border-top: 0rem;
+  border-bottom: 0rem;
   position: relative;
   right: 20%;
-  width: 150%;
+  width: 122%;
 }
 
 /// LATEST POSTS
@@ -267,4 +292,3 @@ border-bottom: 2px solid #000000;
 .bootscore-info.bg-light.py-2.text-center.text-primary {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 46.88%, #0000FF 100%);
 }
-
