@@ -115,6 +115,17 @@ h2 {
   }
 }
 
+a.badge.text-bg-secondary.text-decoration-none {
+  font-size: 1.6875rem;
+  font-weight: 300;
+  padding-left: 10%;
+  padding-bottom: 1.875rem;
+  text-transform: uppercase;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  background-color: var(--bs-light) !important;
+}
+
 // NAVBAR
 
 .nav-link {
@@ -285,7 +296,7 @@ border-bottom: 2px solid #000000;
 
 .parent-page-title {
   padding-left: 10%;
-  padding-bottom: 50px;
+  padding-bottom: 1.875rem;
   text-transform: uppercase;
 }
 
