@@ -115,17 +115,6 @@ h2 {
   }
 }
 
-a.badge.text-bg-secondary.text-decoration-none {
-  font-size: 1.6875rem;
-  font-weight: 300;
-  padding-left: 10%;
-  padding-bottom: 1.875rem;
-  text-transform: uppercase;
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
-  background-color: var(--bs-light) !important;
-}
-
 // NAVBAR
 
 .nav-link {
@@ -302,4 +291,25 @@ border-bottom: 2px solid #000000;
 
 .bootscore-info.bg-light.py-2.text-center.text-primary {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 46.88%, #0000FF 100%);
+}
+
+// CATEGORY PAGE
+
+a.badge.text-bg-secondary.text-decoration-none {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 105.99%;
+  padding-left: 10%;
+  padding-bottom: 1.875rem;
+  text-transform: uppercase;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  background-color: var(--bs-light) !important;
+}
+
+.post-date {
+  text-transform: uppercase;
+  margin-left: 50px;
+  display: inline-block;
+  font-size: 20px;
 }
