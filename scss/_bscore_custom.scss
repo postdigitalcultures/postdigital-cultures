@@ -168,7 +168,7 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
       top: 26%;
   }
   .nav-item {
-    padding-right: 2.8rem;
+    padding-right: 1rem;
   }
 }
 
@@ -181,7 +181,13 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
       top: 26%;
   }
   .nav-item {
-    padding-right: 5rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1300px){
+  .nav-item {
+    padding-right: 4rem;
   }
 }
 
