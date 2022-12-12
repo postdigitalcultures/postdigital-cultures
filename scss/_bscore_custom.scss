@@ -162,16 +162,42 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
 @media (min-width: 992px){
   .navlinks-plus-search {
       display: flex;
+      position: absolute;
+      left: 8%;
+      right: 0;
+      top: 26%;
   }
   .nav-item {
     padding-right: 2.8rem;
   }
 }
 
+@media (min-width: 1200px){
+  .navlinks-plus-search {
+      display: flex;
+      position: absolute;
+      left: 4%;
+      right: 0;
+      top: 26%;
+  }
+  .nav-item {
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1750px){
+  .nav-item {
+    padding-right: 10rem;
+  }
+}
+
 /// SEARCH
 
 form.searchform .form-control {
+  background-color: transparent;
   border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .input-group>:not(:first-child):not(.dropdown-menu):not(.form-floating):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback), .input-group>.form-floating:not(:first-child)>.form-control, .input-group>.form-floating:not(:first-child)>.form-select, .input-group>.form-floating:not(:first-child)>select {
@@ -331,7 +357,7 @@ border-bottom: 2px solid #000000;
 }
 
 .parent-page-title {
-  padding-left: 10%;
+  padding-left: 9%;
   padding-bottom: 1.875rem;
   text-transform: uppercase;
 }
@@ -346,7 +372,7 @@ a.badge.text-bg-secondary.text-decoration-none {
   font-weight: 400;
   font-size: 20px;
   line-height: 105.99%;
-  padding-left: 10%;
+  padding-left: 9%;
   padding-bottom: 1.875rem;
   text-transform: uppercase;
   --bs-text-opacity: 1;
