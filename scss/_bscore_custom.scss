@@ -6,7 +6,9 @@
 // Because this file is compiled after Bootstrap, you're also able to use Bootstrap mixins for better code.
 // Some examples can be found here: https://bootscore.me/documentation/bootstrap-css-sass
 
-// DESKTOP UNIVERSAL
+// UNIVERSAL ELEMENTS
+
+/// DESKTOP
 
 #content {
   max-width: 1920px;
@@ -16,7 +18,7 @@ pre {
   padding: 0rem;
 }
 
-// MOBILE VIEW UNIVERSAL
+/// MOBILE VIEW
 
 @media (max-width: 768px) {
   html {
@@ -24,45 +26,7 @@ pre {
   }
 }
 
-// COLLAPSIBLE TEXT
-
-.collapseomatic {
-  background: none;
-  padding: 30px 0 30px 0;
-  border-bottom: 2px solid #000000;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 27px;
-  line-height: 52px;
-  display: block;
-  width: 132%;
-  position: relative;
-  right: 20%;
-  padding-left: 20%;
-}
-
-.colomat-close {
-  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.2) 52.25%, #0000FF 100%);
-  padding: 30px 0 30px 0;
-  border-bottom: 2px solid #000000;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 27px;
-  line-height: 52px;
-  display: block;
-  width: 132%;
-  position: relative;
-  right: 20%;
-  padding-left: 20%;
-}
-
-.collapseomatic_content {
-  margin-top: 0px;
-  margin-left: 16px;
-  padding-top: 30px;
-}
-
-// HEADINGS
+/// HEADINGS
 
 h1 {
   font-family: 'Work Sans';
@@ -113,6 +77,57 @@ h2 {
   h2 {
     padding-bottom: 0rem;
   }
+}
+
+/// COLLAPSIBLE TEXT
+
+.collapseomatic {
+  background: none;
+  padding: 30px 0 30px 0;
+  border-bottom: 2px solid #000000;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 52px;
+  display: block;
+  width: 132%;
+  position: relative;
+  right: 20%;
+  padding-left: 20%;
+}
+
+.colomat-close {
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0.2) 52.25%, #0000FF 100%);
+  padding: 30px 0 30px 0;
+  border-bottom: 2px solid #000000;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 52px;
+  display: block;
+  width: 132%;
+  position: relative;
+  right: 20%;
+  padding-left: 20%;
+}
+
+.collapseomatic_content {
+  margin-top: 0px;
+  margin-left: 16px;
+  padding-top: 30px;
+}
+
+/// SEPARATOR
+
+hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
+  opacity: 1.0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
+  height: 8.75rem;
+  border-top: 0rem;
+  border-bottom: 0rem;
+  position: relative;
+  right: 20%;
+  width: 132%;
 }
 
 // NAVBAR
@@ -286,11 +301,6 @@ img.onion {
 
 // HOME PAGE
 
-.home .row>* {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .home .entry-content {
   padding: 0;
 }
@@ -307,7 +317,7 @@ img.onion {
   width: 120%;
 }
 
-/// IMAGE GRID
+/// MEDIA-TEXT BLOCK
 
 .wp-block-media-text__content {
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
@@ -336,19 +346,6 @@ img.onion {
   filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(202deg) brightness(102%) contrast(142%);
 }
 
-/// SEPARATOR
-
-hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
-  opacity: 1.0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
-  height: 8.75rem;
-  border-top: 0rem;
-  border-bottom: 0rem;
-  position: relative;
-  right: 20%;
-  width: 132%;
-}
-
 /// LATEST POSTS
 
 .wp-block-latest-posts.wp-block-latest-posts__list {
@@ -375,7 +372,12 @@ font-size: 20px;
 border-bottom: 2px solid #000000;
 }
 
-// PAGES
+// DEFAULT PAGE
+
+.row>* {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .entry-header {
   font-weight: 400;
@@ -418,4 +420,10 @@ a.badge.text-bg-secondary.text-decoration-none {
   margin-left: 50px;
   display: inline-block;
   font-size: 20px;
+}
+
+// POSTS PAGE
+
+.post-template-default .entry-meta {
+  padding-left: 9%;
 }
