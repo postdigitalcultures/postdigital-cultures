@@ -35,7 +35,7 @@ pre {
   font-size: 27px;
   line-height: 52px;
   display: block;
-  width: 122%;
+  width: 132%;
   position: relative;
   right: 20%;
   padding-left: 20%;
@@ -50,7 +50,7 @@ pre {
   font-size: 27px;
   line-height: 52px;
   display: block;
-  width: 122%;
+  width: 132%;
   position: relative;
   right: 20%;
   padding-left: 20%;
@@ -286,6 +286,27 @@ img.onion {
 
 // HOME PAGE
 
+.home .row>* {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.home .entry-content {
+  padding: 0;
+}
+
+.home h1 {
+  padding-left: 9%;
+}
+
+.home .wp-block-latest-posts.wp-block-latest-posts__list li {
+  padding-left: 9%;
+}
+
+.home hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
+  width: 120%;
+}
+
 /// IMAGE GRID
 
 .wp-block-media-text__content {
@@ -295,6 +316,11 @@ img.onion {
 
 .wp-block-media-text__content a {
   text-decoration: none;
+}
+
+.wp-block-media-text .wp-block-media-text__content {
+  padding-left: 0;
+  padding-right: 8%;
 }
 
 .wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-bottom {
@@ -320,7 +346,7 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
   border-bottom: 0rem;
   position: relative;
   right: 20%;
-  width: 122%;
+  width: 132%;
 }
 
 /// LATEST POSTS
@@ -357,6 +383,10 @@ border-bottom: 2px solid #000000;
   line-height: 105.99%;
   /* or 32px */
   text-transform: capitalize;
+}
+
+.entry-content {
+  padding: 0 8%;
 }
 
 .parent-page-title {
