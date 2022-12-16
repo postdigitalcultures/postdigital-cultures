@@ -102,7 +102,12 @@
               <div class="d-none d-lg-block ms-1 ms-md-2 top-nav-search-lg">
                 <?php if (is_active_sidebar('top-nav-search')) : ?>
                   <div>
-                    <?php dynamic_sidebar('top-nav-search'); ?>
+                    <!-- Search Button Outline Secondary Right -->
+                    <form class="searchform input-group" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                      <label for="site-search-desktop" hidden>Search</label>
+                      <input id="site-search-desktop" type="text" name="s" class="form-control" placeholder="<?php _e('Search', 'bootscore'); ?>">
+                      <button type="submit" class="input-group-text btn btn-outline-primary"><i class="fa-solid fa-magnifying-glass"></i><span class="visually-hidden-focusable">Search</span></button>
+                    </form>                  
                   </div>
                 <?php endif; ?>
               </div>
@@ -129,7 +134,12 @@
       <div class="collapse container d-lg-none" id="collapse-search">
         <?php if (is_active_sidebar('top-nav-search')) : ?>
           <div class="mb-2">
-            <?php dynamic_sidebar('top-nav-search'); ?>
+            <!-- Search Button Outline Secondary Right -->
+            <form class="searchform input-group" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+              <label for="site-search-mobile" hidden>Search</label>
+              <input id="site-search-mobile" type="text" name="s" class="form-control" placeholder="<?php _e('Search', 'bootscore'); ?>">
+              <button type="submit" class="input-group-text btn btn-outline-primary"><i class="fa-solid fa-magnifying-glass"></i><span class="visually-hidden-focusable">Search</span></button>
+            </form>
           </div>
         <?php endif; ?>
       </div>
