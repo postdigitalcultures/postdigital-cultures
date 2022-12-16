@@ -307,6 +307,7 @@ img.onion {
 
 .home h1 {
   padding-left: 9%;
+  padding-bottom: 8%;
 }
 
 .home .wp-block-latest-posts.wp-block-latest-posts__list li {
@@ -322,51 +323,52 @@ img.onion {
   padding-bottom: 0;
 }
 
-/// MEDIA-TEXT BLOCK (RESEARCH GROUPS)
+/// RESEARCH GROUPS (MEDIA-TEXT BLOCK)
 
-.wp-block-media-text__content {
+.research-group-block {
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
   text-decoration: none;
 }
 
-.wp-block-media-text__content a {
+.research-group-block a {
   text-decoration: none;
 }
 
-.wp-block-media-text .wp-block-media-text__content {
-  padding-left: 0;
-  padding-right: 8%;
-}
-
-.wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-bottom {
+.research-group-block {
   transition: 0.5s;
 }
 
-.wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-bottom:hover {
+.research-group-block:hover {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
 }
 
-.wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-bottom img:hover {
+.research-group-block img:hover {
   -webkit-filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(202deg) brightness(102%) contrast(142%);
   filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(202deg) brightness(102%) contrast(142%);
 }
 
-/// MEDIA-TEXT BLOCKS IN TWO COLUMNS (PUBLICATIONS)
+/// PUBLICATIONS (MEDIA-TEXT BLOCKS IN TWO COLUMNS)
 
-.wp-block-columns .wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-top {
+.publication-block {
   filter: grayscale(100%) contrast(188%);
   -webkit-filter: grayscale(100%) contrast(188%);
   -moz-filter: grayscale(100%) contrast(188%);
 }
 
-.wp-block-columns .wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-top:hover {
+.publication-block a {
+  text-decoration: none;
+}
+
+.publication-block:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
   filter: none;
   -webkit-filter: none;
   -moz-filter: none;
 }
 
-/// LATEST POSTS (NEWS/EVENTS)
+/// PROJECTS (IMAGES IN TWO COLUMNS)
+
+/// NEWS/EVENTS (LATEST POSTS)
 
 .wp-block-latest-posts.wp-block-latest-posts__list {
   list-style: none;
