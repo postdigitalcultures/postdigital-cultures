@@ -194,8 +194,3 @@ function rewrite_permalinks($content) {
 	$content = preg_replace('/https?:\/\/postdigitalcultures.org/', 'http://testing.onion', $content);
 	return $content;
 }
-
-// increase file upload size
-@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
-@ini_set( 'max_execution_time', '300' );
