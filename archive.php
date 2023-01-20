@@ -30,11 +30,11 @@ get_header();
 
           <!-- Grid Layout -->
           <?php if (have_posts()) : ?>
+            <header class="entry-header">
+              <!-- Category name -->
+              <?php bootscore_category_badge(); ?>
+            </header>
             <?php while (have_posts()) : the_post(); ?>
-              <header class="entry-header">
-                <!-- Category name -->
-                <?php bootscore_category_badge(); ?>
-              </header>
 
               <ul class="wp-block-latest-posts__list has-dates wp-block-latest-posts has-large-font-size">
                 <li>
