@@ -318,11 +318,6 @@ img.onion {
   width: 120%;
 }
 
-.home .wp-block-media-text__content h2 {
-  text-transform: none;
-  padding-bottom: 0;
-}
-
 /// RESEARCH GROUPS (MEDIA-TEXT BLOCK)
 
 .research-group-block {
@@ -347,12 +342,19 @@ img.onion {
   filter: invert(8%) sepia(100%) saturate(7120%) hue-rotate(202deg) brightness(102%) contrast(142%);
 }
 
+.research-group-block .wp-block-media-text__content h2 {
+  text-transform: none;
+  padding-bottom: 0;
+}
+
 /// PUBLICATIONS (MEDIA-TEXT BLOCKS IN TWO COLUMNS)
 
 .publication-block {
   filter: grayscale(100%) contrast(188%);
   -webkit-filter: grayscale(100%) contrast(188%);
   -moz-filter: grayscale(100%) contrast(188%);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .publication-block a {
