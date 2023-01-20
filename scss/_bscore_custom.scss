@@ -368,7 +368,29 @@ img.onion {
   -moz-filter: none;
 }
 
-/// PROJECTS (IMAGES IN TWO COLUMNS)
+/// PROJECTS (IMAGES AND TEXT IN TWO COLUMNS)
+
+.project-block {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.project-block a {
+  text-decoration: none;
+}
+
+.project-block .wp-block-column {
+  filter: grayscale(100%) contrast(188%);
+  -webkit-filter: grayscale(100%) contrast(188%);
+  -moz-filter: grayscale(100%) contrast(188%);
+}
+
+.project-block .wp-block-column:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+}
 
 /// NEWS/EVENTS (LATEST POSTS)
 
