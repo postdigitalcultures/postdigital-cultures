@@ -408,7 +408,6 @@ img.onion {
   -moz-filter: none;
 }
 
-
 //// PROJECTS MOBILE
 
 @media (max-width: 600px){
@@ -417,6 +416,17 @@ img.onion {
   }
 }
 
+@media (max-width: 600px){
+  .project-block .wp-block-column:nth-child(even) {
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 600px){
+  .project-block .wp-block-column:nth-child(odd) {
+    padding-right: 20%;
+  }
+}
 
 /// NEWS/EVENTS (LATEST POSTS)
 
