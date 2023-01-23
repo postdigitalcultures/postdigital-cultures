@@ -411,12 +411,6 @@ img.onion {
 //// PROJECTS MOBILE
 
 @media (max-width: 600px){
-  .project-block {
-    max-width: 75%;
-  }
-}
-
-@media (max-width: 600px){
   .project-block .wp-block-column:nth-child(even) {
     padding-left: 20%;
   }
