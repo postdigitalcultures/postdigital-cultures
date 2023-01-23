@@ -368,6 +368,22 @@ img.onion {
   -moz-filter: none;
 }
 
+//// PUBLICATIONS MOBILE
+
+@media (max-width: 600px){
+  .publication-block .wp-block-media-text__content {
+    grid-column: 1;
+    grid-row: 1 !important;
+    padding-left: 35%;
+  }
+}
+
+@media (max-width: 600px){
+  .publication-block figure {
+    max-width: 30%;
+  }
+}
+
 /// PROJECTS (IMAGES AND TEXT IN TWO COLUMNS)
 
 .project-block {
@@ -391,6 +407,16 @@ img.onion {
   -webkit-filter: none;
   -moz-filter: none;
 }
+
+
+//// PROJECTS MOBILE
+
+@media (max-width: 600px){
+  .project-block {
+    max-width: 75%;
+  }
+}
+
 
 /// NEWS/EVENTS (LATEST POSTS)
 
