@@ -374,6 +374,10 @@ img.onion {
   -moz-filter: none;
 }
 
+.publication-block .has-large-font-size {
+  font-weight: 300;
+}
+
 //// PUBLICATIONS MOBILE
 
 @media (max-width: 600px){
@@ -414,6 +418,10 @@ img.onion {
   -moz-filter: none;
 }
 
+.project-block .has-large-font-size {
+  font-weight: 300;
+}
+
 //// PROJECTS MOBILE
 
 @media (max-width: 600px){
@@ -438,6 +446,7 @@ img.onion {
 a.wp-block-latest-posts__post-title {
   font-style: italic;
   text-decoration: none;
+  font-weight: 300;
 }
 
 time.wp-block-latest-posts__post-date {
