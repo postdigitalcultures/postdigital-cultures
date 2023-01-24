@@ -23,7 +23,7 @@
   <!-- Onion-Location Header -->
   <meta http-equiv="onion-location" content="http://testing.onion" />
   <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,700" rel='stylesheet' type='text/css'>
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon-32x32.png">
@@ -56,7 +56,7 @@
           </a>
           <a class="navbar-brand text-dark md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>">
             <div id="logo-first">Centre for</div>
-            <div><span id="logo-second">Postdigital</span> Cultures</div>
+            <div id="logo-third"><span id="logo-second">Postdigital</span> Cultures</div>
           </a>
 
           <div class="navlinks-plus-search">
