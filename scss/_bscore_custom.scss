@@ -350,9 +350,9 @@ img.onion {
 /// PUBLICATIONS (MEDIA-TEXT BLOCKS IN TWO COLUMNS)
 
 .publication-block {
-  filter: grayscale(100%) contrast(188%);
-  -webkit-filter: grayscale(100%) contrast(188%);
-  -moz-filter: grayscale(100%) contrast(188%);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -396,9 +396,9 @@ img.onion {
 }
 
 .project-block .wp-block-column {
-  filter: grayscale(100%) contrast(188%);
-  -webkit-filter: grayscale(100%) contrast(188%);
-  -moz-filter: grayscale(100%) contrast(188%);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
 }
 
 .project-block .wp-block-column:hover {
