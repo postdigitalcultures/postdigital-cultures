@@ -430,13 +430,14 @@ img.onion {
 }
 
 a.wp-block-latest-posts__post-title {
-font-style: italic;
-text-decoration: none;
+  font-style: italic;
+  text-decoration: none;
 }
 
 time.wp-block-latest-posts__post-date {
-text-transform: uppercase;
-margin-left: 50px;
+  text-transform: uppercase;
+  margin-left: 50px;
+  margin-right: 20px;
 }
 
 .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date {
