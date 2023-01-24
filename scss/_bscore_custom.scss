@@ -440,18 +440,19 @@ margin-left: 50px;
 }
 
 .wp-block-latest-posts__post-author, .wp-block-latest-posts__post-date {
-display: inline-block;
-font-size: 20px;
+  display: inline-block;
+  font-size: 20px;
+  float: right;
+  margin-top: 20px;
 }
 
 .wp-block-latest-posts li {
-border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #000000;
 }
 
 .post-date {
   float: right;
   margin-top: 20px;
-  margin-right: 10px;
 }
 
 // DEFAULT PAGE
