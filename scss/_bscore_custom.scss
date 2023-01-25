@@ -461,6 +461,10 @@ img.onion {
   padding-left: 0;
 }
 
+ul.wp-block-latest-posts__list {
+  margin-bottom: 0;
+}
+
 .wp-block-latest-posts.wp-block-latest-posts__list li:hover {
   background: linear-gradient(-90deg, rgba(255, 255, 255, 0.2) 52.25%, #0000FF 100%);
 }
