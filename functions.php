@@ -231,9 +231,9 @@ function custom_javascript() {
       <script>
         try {
           // jQuery to wrap project-blocks in their own div
-          jQuery(".project-block").wrapAll( "<div id='project-wrapper' />");
+          jQuery(".project-block").wrapAll( "<div id='project-blocks-wrapper' />");
           // select that div
-          var collection = document.querySelector('#project-wrapper');
+          var collection = document.querySelector('#project-blocks-wrapper');
           // randomise the children of that wrapper div
           for (var i = collection.children.length; i >= 0; i--) {
             collection.appendChild(collection.children[Math.random() * i | 0]);
@@ -244,9 +244,9 @@ function custom_javascript() {
 
         try {
           // jQuery to wrap publication-blocks in their own div
-          jQuery(".publications-block").wrapAll( "<div id='publication-wrapper' />");
+          jQuery(".publications-block").wrapAll( "<div id='publications-block-wrapper' />");
           // select that div
-          var collection = document.querySelector('#publication-wrapper');
+          var collection = document.querySelector('#publications-block-wrapper');
           // randomise the children of that wrapper div
           for (var i = collection.children.length; i >= 0; i--) {
             collection.appendChild(collection.children[Math.random() * i | 0]);
