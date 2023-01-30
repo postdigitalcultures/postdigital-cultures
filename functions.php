@@ -244,7 +244,7 @@ function custom_javascript() {
 
         try {
           // jQuery to wrap publication-blocks in their own div
-          jQuery(jQuery(".publication-block").parents().eq(3)).wrap( "<div id='publication-wrapper' />");
+          jQuery(".publications-block").wrapAll( "<div id='publication-wrapper' />");
           // select that div
           var collection = document.querySelector('#publication-wrapper');
           // randomise the children of that wrapper div
