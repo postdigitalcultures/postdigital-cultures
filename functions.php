@@ -222,3 +222,22 @@ function rewrite_permalinks($content) {
     echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 
   }
+
+/**
+* function to add custom JavaScript
+*/
+function custom_javascript() {
+    ?>
+      <script>
+        // jQuery to wrap project-blocks in their own div
+        jQuery( ".project-block" ).wrapAll( "<div id='project-wrapper' />");
+        // select that div
+        var collection = document.querySelector('#project-wrapper');
+        // randomise the children of that wrapper div
+        for (var i = collection.children.length; i >= 0; i--) {
+          collection.appendChild(collection.children[Math.random() * i | 0]);
+        }
+      </script>
+    <?php
+}
+add_action('wp_footer', 'custom_javascript');
