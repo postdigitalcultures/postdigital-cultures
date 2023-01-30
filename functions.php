@@ -229,13 +229,30 @@ function rewrite_permalinks($content) {
 function custom_javascript() {
     ?>
       <script>
-        // jQuery to wrap project-blocks in their own div
-        jQuery( ".project-block" ).wrapAll( "<div id='project-wrapper' />");
-        // select that div
-        var collection = document.querySelector('#project-wrapper');
-        // randomise the children of that wrapper div
-        for (var i = collection.children.length; i >= 0; i--) {
-          collection.appendChild(collection.children[Math.random() * i | 0]);
+        try {
+          // jQuery to wrap project-blocks in their own div
+          jQuery(".project-block").wrapAll( "<div id='project-wrapper' />");
+          // select that div
+          var collection = document.querySelector('#project-wrapper');
+          // randomise the children of that wrapper div
+          for (var i = collection.children.length; i >= 0; i--) {
+            collection.appendChild(collection.children[Math.random() * i | 0]);
+          }
+        } catch (error) {
+          console.error(error);
+        }
+
+        try {
+          // jQuery to wrap publication-blocks in their own div
+          jQuery(jQuery(".publication-block").parents().eq(2)).wrapAll( "<div id='publication-wrapper' />");
+          // select that div
+          var collection = document.querySelector('#publication-wrapper');
+          // randomise the children of that wrapper div
+          for (var i = collection.children.length; i >= 0; i--) {
+            collection.appendChild(collection.children[Math.random() * i | 0]);
+          }
+        } catch (error) {
+          console.error(error);
         }
       </script>
     <?php
