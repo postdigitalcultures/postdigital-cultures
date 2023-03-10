@@ -87,7 +87,7 @@
             </div>
 
 
-            <div class="header-actions d-flex align-items-center">
+            <div class="header-actions d-flex">
 
               <!-- Top Nav Widget -->
               <div class="top-nav-widget">
@@ -105,7 +105,7 @@
                     <!-- Search Button Outline Secondary Right -->
                     <form class="searchform input-group" method="get" action="<?php echo esc_url(home_url('/')); ?>">
                       <label for="site-search-desktop" hidden>Search</label>
-                      <input id="site-search-desktop" type="text" name="s" class="form-control" placeholder="<?php _e('Search', 'bootscore'); ?>">
+                      <input id="site-search-desktop" type="text" name="s" class="form-control">
                       <button type="submit" class="input-group-text btn btn-outline-primary"><i class="fa-solid fa-magnifying-glass"></i><span class="visually-hidden-focusable">Search</span></button>
                     </form>                  
                   </div>

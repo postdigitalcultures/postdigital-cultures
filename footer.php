@@ -78,8 +78,8 @@
 
   <div class="bootscore-info bg-light py-2 text-center text-primary">
     <?php if (is_active_sidebar('bottom-footer')) : ?>
-      <div class="container">
-        <small><?php dynamic_sidebar('bottom-footer'); ?></small>
+      <div class="container bottom-footer">
+        <?php dynamic_sidebar('bottom-footer'); ?>
         <div class="row">
           <div class="col-md-12 onion">
             <a href="http://testing.onion">

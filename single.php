@@ -22,7 +22,7 @@ get_header();  ?>
             <?php the_post(); ?>
             <?php bootscore_category_badge(); ?>
             <?php the_title('<h1>', '</h1>'); ?>
-            <p class="entry-meta">
+            <!-- <p class="entry-meta">
               <small class="text-muted">
                 <?php
                 bootscore_date();
@@ -31,7 +31,7 @@ get_header();  ?>
                 #bootscore_comment_count();
                 ?>
               </small>
-            </p>
+            </p> -->
             <?php bootscore_post_thumbnail(); ?>
           </header>
 
@@ -54,8 +54,6 @@ get_header();  ?>
               </ul>
             </nav>-->
           </footer>
-
-          <?php comments_template(); ?>
 
         </main> <!-- #main -->
 
