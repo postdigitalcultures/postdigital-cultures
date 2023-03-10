@@ -172,18 +172,30 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
 
 @media (max-width: 1750px) {
   .nav-link {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  .menu-item {
+    padding-right: 4.769rem;
+    font-size: 0.9rem !important;
   }
 }
 
 @media (max-width: 1366px) {
   .nav-link {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
+  }
+  .menu-item {
+    padding-right: 3.769rem;
+    font-size: 0.8rem !important;
   }
 }
 
 @media (max-width: 1200px) {
   .nav-link {
+    font-size: 0.7rem !important;
+  }
+  .menu-item {
+    padding-right: 2.769rem;
     font-size: 0.7rem !important;
   }
 }
