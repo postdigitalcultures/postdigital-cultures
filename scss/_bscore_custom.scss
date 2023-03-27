@@ -782,3 +782,11 @@ a.badge.text-bg-secondary.text-decoration-none {
     height: 33vw;
   }
 }
+
+.wp-block-image.aligncenter>figcaption, .wp-block-image .aligncenter>figcaption, .wp-block-image.alignleft>figcaption, .wp-block-image .alignleft>figcaption, .wp-block-image.alignright>figcaption, .wp-block-image .alignright>figcaption {
+  display: flex;
+  font-style: italic;
+  font-size: smaller;
+  text-align: center;
+  caption-side: bottom;
+}
