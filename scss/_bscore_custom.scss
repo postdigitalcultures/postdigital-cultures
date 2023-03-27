@@ -508,6 +508,11 @@ h4 {
   transition: 0.5s;
 }
 
+.research-group-block img {
+  object-fit: cover;
+  aspect-ratio: 2 / 1;
+}
+
 .research-group-block:hover {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
 }
@@ -535,6 +540,17 @@ h4 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   line-height: 3.25rem;
+}
+
+.publication-block img {
+  width: auto;
+  height: 20vw;
+}
+
+@media (max-width: 768px) {
+  .publication-block img {
+    height: 42vw;
+  }
 }
 
 .publication-block a {
@@ -590,6 +606,11 @@ h4 {
 .project-block {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.project-block img {
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
 }
 
 .project-block a {
@@ -740,4 +761,24 @@ a.badge.text-bg-secondary.text-decoration-none {
 
 .post-template-default .entry-meta {
   padding-left: 9%;
+}
+
+// COVER IMAGES FOR PAGES
+
+.cover-img img {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+  height: 50vw;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .cover-img img {
+    height: 33vw;
+  }
 }
