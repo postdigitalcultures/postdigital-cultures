@@ -765,8 +765,19 @@ a.badge.text-bg-secondary.text-decoration-none {
 
 // COVER IMAGES FOR PAGES
 
+.cover-img {
+  margin-bottom: 7.692rem;
+}
+
+@media (max-width: 992px) {
+  .cover-img {
+    margin-bottom: 1.154rem;
+  }
+}
+
 .cover-img img {
   left: 50%;
+  margin-top: -3.5vw;
   margin-left: -50vw;
   margin-right: -50vw;
   max-width: 100vw;
