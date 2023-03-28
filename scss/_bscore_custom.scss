@@ -152,7 +152,7 @@ h2 {
 
 hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
   opacity: 1.0;
-  background: linear-gradient(0deg, #0000FF 0%, rgba(255, 255, 255, 0) 56.77%);
+  background: linear-gradient(0deg, #0000FF, #0909ff, #2020ff, #4242ff 19%, #6a6aff, #9595ff, #bdbdff, #dfdfff, #f6f6ff, #ffffff 70%);
   height: 8.75rem;
   border-top: 0rem;
   border-bottom: 0rem;
@@ -182,11 +182,11 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
 
 @media (max-width: 1366px) {
   .nav-link {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
   }
   .menu-item {
     padding-right: 3.769rem;
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
   }
 }
 
@@ -246,7 +246,7 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
 }
 
 #masthead {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 70%, #0000FF 100%);
+  background: linear-gradient(180deg, #000FFF, #4242ff , #6a6aff, #9595ff, #bdbdff, #dfdfff, #f6f6ff, #ffffff 20%);
 }
 
 @media (min-width: 992px){
@@ -255,7 +255,7 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
       position: absolute;
       left: 8%;
       right: 0;
-      top: 26%;
+      top: 20%;
   }
   .menu-item {
     padding-right: 2.769rem;
@@ -268,7 +268,7 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
       position: absolute;
       left: 4%;
       right: 0;
-      top: 26%;
+      top: 12%;
   }
   .menu-item {
     padding-right: 2.769rem;
@@ -409,7 +409,7 @@ img.onion {
 }
 
 .bootscore-info.bg-light.py-2.text-center.text-primary {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 56.77%, #0000FF 100%);
+  background: linear-gradient(0deg, #0000FF 0.5%, #0909ff 0.5%, #2020ff 1%, #4242ff 5%, #6a6aff, #9595ff, #bdbdff, #dfdfff, #f6f6ff, #ffffff 30%);
 }
 
 h4 {
@@ -777,7 +777,6 @@ a.badge.text-bg-secondary.text-decoration-none {
 
 .cover-img img {
   left: 50%;
-  margin-top: -3.5vw;
   margin-left: -50vw;
   margin-right: -50vw;
   max-width: 100vw;
