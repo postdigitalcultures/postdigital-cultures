@@ -73,6 +73,13 @@ h1 {
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 58px;
