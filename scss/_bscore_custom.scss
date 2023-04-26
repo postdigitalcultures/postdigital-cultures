@@ -460,12 +460,12 @@ h4 {
 }
 
 .home h1 {
-  padding-left: 9%;
+  padding-left: 8%;
   padding-bottom: 8%;
 }
 
 .home .wp-block-latest-posts.wp-block-latest-posts__list li {
-  padding-left: 9%;
+  padding-left: 8%;
   padding-top: 1.923rem;
   padding-bottom: 1.923rem;
 }
@@ -546,11 +546,11 @@ h4 {
   direction: ltr;
 }
 
-.research-group-block.wp-block-media-text:nth-child(2n) .wp-block-media-text__content {
-  display: flex;
-  justify-content: inherit;
-  align-items: flex-end;
-}
+// .research-group-block.wp-block-media-text:nth-child(2n) .wp-block-media-text__content {
+//   display: flex;
+//   justify-content: inherit;
+//   align-items: flex-end;
+// }
 
 // .research-group-block:nth-child(2n):hover .wp-block-media-text__content {
 //   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
