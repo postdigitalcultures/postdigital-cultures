@@ -69,22 +69,28 @@ h1 {
   font-style: italic;
   font-weight: 300;
   font-size: 11.563vw;
+  line-height: 8.698vw;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    padding-left: 3%;
+  }
 }
 
 .entry-content h1 {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.154rem;
-  line-height: 105.99%;
+  font-size: 1.563vw;
   text-transform: uppercase;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
 }
 
 h2 {
-  font-size: 1.154rem;
+  font-size: 1.563vw;
   font-weight: 400;
   padding-bottom: 1.875rem;
   text-transform: uppercase;
@@ -94,6 +100,7 @@ h2 {
 
 @media (max-width: 768px) {
   h2 {
+    font-size: 22px;
     padding-bottom: 0rem;
   }
 }
@@ -420,12 +427,13 @@ img.onion {
 }
 
 .bootscore-footer {
-  font-size: 0.846rem;
+  font-size: 22px;
+  line-height: 25.81px;
 }
 
 .bottom-footer {
-  font-size: 0.538rem;
-  line-height: auto;
+  font-size: 14px;
+  line-height: 16.42px;
 }
 
 .bottom-footer p {
@@ -440,7 +448,7 @@ h4 {
   font-family: 'Work Sans';
   font-style: italic;
   font-weight: 300;
-  font-size: 1.154rem;
+  font-size: 30px;
   text-transform: capitalize;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
@@ -612,6 +620,10 @@ h4 {
   }
 }
 
+.wp-block-media-text .wp-block-media-text__content {
+  padding: 0 0%;
+}
+
 //// PUBLICATIONS ZOTERO PLUGIN
 
 .zp-Entry {
@@ -756,9 +768,16 @@ time.wp-block-latest-posts__post-date {
 
 .parent-page-title {
   font-size: 1.563vw;
-  padding-left: 9%;
+  padding-left: 8%;
   padding-bottom: 1.875rem;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .parent-page-title {
+    font-size: 22px;
+    padding-left: 3%;
+  }
 }
 
 .subtitle { 
