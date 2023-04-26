@@ -55,8 +55,8 @@
             <img class="img-fluid" style="height: 60px;" aria-label="Home" alt="CPC logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/cpc_logo.svg">
           </a>
           <a class="navbar-brand text-dark md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>">
-            <div id="logo-first">Centre for</div>
-            <div id="logo-third"><span id="logo-second">Postdigital</span> Cultures</div>
+            <div id="logo-top">Centre for</div>
+            <div id="logo-bottom"><span id="logo-postdigital">Postdigital</span> Cultures</div>
           </a>
 
           <div class="navlinks-plus-search">

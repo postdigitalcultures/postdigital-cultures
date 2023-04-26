@@ -199,7 +199,7 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
   .menu-item {
     font-size: 0.7rem !important;
   }
-  #logo-first {
+  #logo-top {
     padding-left: 25px;
   }
 }
@@ -218,7 +218,7 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
     font-size: 1.346rem;
 }
 
-#logo-first {
+#logo-top {
   transform: rotate(90deg);
   /* Legacy vendor prefixes that you probably don't need... */
   /* Safari */
@@ -236,13 +236,13 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
   font-weight: 300;
 }
 
-#logo-second {
+#logo-postdigital {
   font-weight: 700;
   display: inline-block;
   letter-spacing: -1px;
 }
 
-#logo-third {
+#logo-bottom {
   font-weight: 300;
   position: relative;
 }
@@ -298,10 +298,8 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
   background-color: transparent;
 }
 
-// MELANI
-
 // Add gradient below logo (extended version)
-div#logo-third::before {  
+div#logo-bottom::before {  
   content: "";
   width: calc(100% + 1.5rem);
   height: 20rem;
