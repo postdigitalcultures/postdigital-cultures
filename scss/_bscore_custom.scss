@@ -486,7 +486,7 @@ h4 {
   overflow: initial;
   font-size: 11.8vw;
   line-height: 8.9vw;
-  padding: 0 10px;
+  padding: 0 10px;
 }
 
 .home-text-block strong{
@@ -526,12 +526,44 @@ h4 {
 .research-group-block .wp-block-media-text__content h2 {
   text-transform: none;
   padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 0.75em;
+  font-size: 3.25vw !important;
+  max-width: 32vw;
+}
+
+.research-group-block .wp-block-media-text__content {
+  padding: 0 0.5rem;
 }
 
 .research-group-block h2 {
   font-weight: 300;
 }
 
+.insert-page.insert-page-29 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.research-group-block.wp-block-media-text {
+  //width: 50%;
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+.research-group-block.wp-block-media-text:nth-child(2n) .wp-block-media-text__content {
+  display: flex;
+  justify-content: inherit;
+  align-items: flex-end;
+}
+
+// .research-group-block:nth-child(2n):hover .wp-block-media-text__content {
+//   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
+// }
+
+// .research-group-block:hover .wp-block-media-text__content {
+//   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
+// }
 
 /// PUBLICATIONS (MEDIA-TEXT BLOCKS IN TWO COLUMNS)
 
