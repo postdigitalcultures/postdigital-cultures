@@ -68,23 +68,8 @@ h1 {
   font-family: 'Work Sans';
   font-style: italic;
   font-weight: 300;
-  font-size: 8.538rem;
-  line-height: 6.423rem;
+  font-size: 11.563vw;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
-}
-
-@media (max-width: 1366px) {
-  h1 {
-    font-size: 5rem;
-    line-height: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 58px;
-    line-height: 69.9px;
-  }
 }
 
 .entry-content h1 {
@@ -770,16 +755,15 @@ time.wp-block-latest-posts__post-date {
 }
 
 .parent-page-title {
-  font-size: 1.154rem;
-  line-height: 1.223rem;
+  font-size: 1.563vw;
   padding-left: 9%;
   padding-bottom: 1.875rem;
   text-transform: uppercase;
 }
 
 .subtitle { 
-  font-size: 3.75vw;
-  line-height: 4.399vw;
+  font-size: 2.813vw;
+  line-height: 3.299vw;
 }
 
 // CATEGORY PAGE
