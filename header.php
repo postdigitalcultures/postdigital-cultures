@@ -23,7 +23,7 @@
   <!-- Onion-Location Header -->
   <meta http-equiv="onion-location" content="http://testing.onion" />
   <!-- Google font -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,700,800" rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,300italic,400,700,800" rel="stylesheet" type="text/css">
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon-32x32.png">
@@ -41,7 +41,7 @@
 
   <div id="page" class="site">
 
-  
+  <div class="header-gradient"></div>
   <header id="masthead" class="site-header">
 
     <div>
@@ -77,7 +77,7 @@
                   'container' => false,
                   'menu_class' => '',
                   'fallback_cb' => '__return_false',
-                  'items_wrap' => '<ul id="bootscore-navbar" class="navbar-nav ms-auto %2$s">%3$s</ul>',
+                  'items_wrap' => '<ul id="bootscore-navbar" class="navbar-nav %2$s">%3$s</ul>',
                   'depth' => 2,
                   'walker' => new bootstrap_5_wp_nav_menu_walker()
                 ));

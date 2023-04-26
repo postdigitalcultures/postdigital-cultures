@@ -113,6 +113,11 @@ h2 {
   }
 }
 
+// Add margin top to home headings
+.home h1 {
+  padding-top: 2rem;
+}
+
 /// COLLAPSIBLE TEXT
 
 .collapseomatic {
@@ -182,7 +187,6 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
     font-size: 0.8rem !important;
   }
   .menu-item {
-    padding-right: 4.769rem;
     font-size: 0.8rem !important;
   }
 }
@@ -192,7 +196,6 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
     font-size: 0.7rem !important;
   }
   .menu-item {
-    padding-right: 3.769rem;
     font-size: 0.7rem !important;
   }
 }
@@ -202,7 +205,6 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
     font-size: 0.7rem !important;
   }
   .menu-item {
-    padding-right: 2.769rem;
     font-size: 0.7rem !important;
   }
   #logo-first {
@@ -252,10 +254,6 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
   font-weight: 300;
 }
 
-#masthead {
-  background: linear-gradient(180deg, #000FFF, #4242ff , #6a6aff, #9595ff, #bdbdff, #dfdfff, #f6f6ff, #ffffff 20%);
-}
-
 @media (min-width: 992px){
   .navlinks-plus-search {
       display: flex;
@@ -294,10 +292,6 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
   }
 }
 
-.dropdown-menu .menu-item {
-  padding-right: 0rem;
-}
-
 .dropdown-toggle:after { 
   content: none 
 }
@@ -309,6 +303,44 @@ a.navbar-brand.text-dark.md.d-none.d-md-block {
 .dropdown-item:hover, .dropdown-item:focus .dropdown-item:active {
   font-weight: 800;
   background-color: transparent;
+}
+
+// MELANI
+
+// Add gradient below logo (extended version)
+div#logo-third::before {  
+  content: "";
+  width: calc(24% + 1.5rem);
+  height: 20rem;
+  position: absolute;
+  top: 92%;
+  background: linear-gradient(180deg, #000FFF, #4242ff, #6a6affcc, #9595ff99, #bdbdff66, #dfdfff22, #f6f6ff22, #ffffff00 20%);
+  left: -1.5rem;
+  z-index: -1;
+}
+
+// Separate header gradient from container, so it can be fixed
+.header-gradient {  
+  background: linear-gradient(180deg, #000FFF, #4242ff, #6a6affcc, #9595ff99, #bdbdff66, #dfdfff22, #f6f6ff22, #ffffff00 20%);  
+  width: 100%;  
+  height: 10rem;  
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+}
+
+// Prevent breaking menu words
+.navbar-expand-lg .navbar-nav {
+  flex-shrink: 0;
+}
+
+// Fix menu item spacing
+.navbar-nav {
+  margin-left: 1.5rem;
+}
+
+.menu-item {
+  padding-right: 2rem;
 }
 
 /// SEARCH
@@ -452,53 +484,15 @@ h4 {
 .home-text-block {
   font-weight: 300;
   overflow: initial;
+  font-size: 11.8vw;
+  line-height: 8.9vw;
+  padding: 0 10px;
 }
 
 .home-text-block strong{
-  font-weight: 700;
+  font-weight: 800;
 }
 
-@media (max-width: 1920px) {
-  .home-text-block {
-    font-size: 8.538rem;
-    line-height: 6.423rem;
-  }
-}
-
-@media (max-width: 1750px) {
-  .home-text-block {
-    font-size: 7rem;
-    line-height: 5rem;
-  }
-}
-
-@media (max-width: 1366px) {
-  .home-text-block {
-    font-size: 6rem;
-    line-height: 4rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .home-text-block {
-    font-size: 5rem;
-    line-height: 3.8rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .home-text-block {
-    font-size: 3rem;
-    line-height: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .home-text-block {
-    font-size: 2.231rem;
-    line-height: 1.673rem;
-  }
-}
 
 /// RESEARCH GROUPS (MEDIA-TEXT BLOCK)
 
@@ -538,6 +532,7 @@ h4 {
   font-weight: 300;
 }
 
+
 /// PUBLICATIONS (MEDIA-TEXT BLOCKS IN TWO COLUMNS)
 
 .publication-block {
@@ -547,7 +542,14 @@ h4 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   line-height: 3.25rem;
+  text-transform: uppercase;
+  display: flex;
+  margin: 0;
+  font-size: 0.769rem;
+  line-height: 0.815rem;
+  text-transform: uppercase;
 }
+
 
 .publication-block img {
   width: auto;
@@ -569,12 +571,6 @@ h4 {
   filter: none;
   -webkit-filter: none;
   -moz-filter: none;
-}
-
-.publication-block {
-  font-size: 0.769rem;
-  line-height: 0.815rem;
-  text-transform: uppercase;
 }
 
 .publication-block .has-large-font-size {
