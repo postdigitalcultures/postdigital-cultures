@@ -633,7 +633,7 @@ h4 {
 }
 
 @media (max-width: 480px){
-  .publication-block figure {
+  .wp-block-media-text figure {
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -808,13 +808,13 @@ time.wp-block-latest-posts__post-date {
 .subtitle { 
   font-size: 2.813vw;
   line-height: 3.299vw;
+  text-transform: uppercase;
 }
 
 @media (max-width: 480px) {
   .subtitle {
     font-size: 20px;
-    line-height: auto;
-    text-transform: uppercase;
+    line-height: 1;
   }
 }
 
