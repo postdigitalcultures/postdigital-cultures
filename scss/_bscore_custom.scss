@@ -152,6 +152,13 @@ h2 {
   padding-top: 30px;
 }
 
+@media (min-width: 480px) {
+  .collapseomatic_content img {
+    object-fit: cover;
+    width: 23.438vw;
+  }
+}
+
 /// SEPARATOR
 
 hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
@@ -612,7 +619,6 @@ h4 {
   .publication-block .wp-block-media-text__content {
     grid-column: 1;
     grid-row: 1 !important;
-    padding-left: 35%;
   }
 }
 
@@ -623,7 +629,7 @@ h4 {
 }
 
 .wp-block-media-text .wp-block-media-text__content {
-  padding: 0 0%;
+  padding: 0 0 0 8%;
 }
 
 //// PUBLICATIONS ZOTERO PLUGIN
@@ -633,6 +639,16 @@ h4 {
   font-weight: 400;
   padding-left: 1%;
   padding-bottom: 1.5rem;
+}
+
+.zp-List .zp-Entry:nth-child(odd) {
+  padding-right: 15vw;
+  text-align: left;
+}
+
+.zp-List .zp-Entry:nth-child(even) {
+  padding-left: 15vw;
+  text-align: right;
 }
 
 /// PROJECTS (IMAGES AND TEXT IN TWO COLUMNS)
