@@ -628,15 +628,8 @@ h4 {
   }
 }
 
-.wp-block-media-text .wp-block-media-text__content {
+.publication-block .wp-block-media-text__content {
   padding: 0 0 0 8%;
-}
-
-@media (max-width: 480px){
-  .wp-block-media-text figure {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
 }
 
 //// PUBLICATIONS ZOTERO PLUGIN
@@ -809,6 +802,7 @@ time.wp-block-latest-posts__post-date {
   font-size: 2.813vw;
   line-height: 3.299vw;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 480px) {
