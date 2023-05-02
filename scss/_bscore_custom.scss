@@ -632,6 +632,13 @@ h4 {
   padding: 0 0 0 8%;
 }
 
+@media (max-width: 480px){
+  .publication-block figure {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 //// PUBLICATIONS ZOTERO PLUGIN
 
 .zp-Entry {
@@ -791,7 +798,7 @@ time.wp-block-latest-posts__post-date {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .parent-page-title {
     font-size: 22px;
     padding-left: 3%;
@@ -801,6 +808,14 @@ time.wp-block-latest-posts__post-date {
 .subtitle { 
   font-size: 2.813vw;
   line-height: 3.299vw;
+}
+
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 20px;
+    line-height: auto;
+    text-transform: uppercase;
+  }
 }
 
 // CATEGORY PAGE
