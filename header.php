@@ -54,10 +54,16 @@
           <a class="navbar-brand xs d-md-none" href="<?php echo esc_url(home_url()); ?>">
             <img class="img-fluid" style="height: 60px;" aria-label="Home" alt="CPC logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/cpc_logo.svg">
           </a>
+          <?php if (is_front_page()) : ?>
           <a class="navbar-brand text-dark md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>">
             <div id="logo-top">Centre for</div>
             <div id="logo-bottom"><span id="logo-postdigital">Postdigital</span> Cultures</div>
           </a>
+          <?php else: ?>
+          <a class="navbar-brand text-dark md d-none d-md-block" href="<?php echo esc_url(home_url()); ?>">
+            <img class="img-fluid" style="height: 60px;" aria-label="Home" alt="CPC logo" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/logo/cpc_logo.svg">
+          </a>
+          <?php endif; ?>
 
           <div class="navlinks-plus-search">
 
