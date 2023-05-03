@@ -348,8 +348,10 @@ div#logo-bottom::before {
   }
 }
 
-.menu-item {
-  padding-right: 2rem;
+@media (min-width: 992px){
+  .menu-item {
+    padding-right: 2rem;
+  }
 }
 
 /// SEARCH
@@ -756,11 +758,6 @@ footer h2 {
 
 /// PROJECTS (IMAGES AND TEXT IN TWO COLUMNS)
 
-.project-block {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 @media (min-width: 900px){
   .project-block {
     height: 47.135vw;
@@ -792,12 +789,26 @@ footer h2 {
 .project-block {
   font-size: 0.769rem;
   line-height: 0.815rem;
+  margin-bottom: 0;
 }
 
 .project-block .has-large-font-size {
   font-style: italic;
   font-weight: 300;
   line-height: 2rem;
+}
+
+@media (min-width: 600px){
+  #project-blocks-wrapper .project-block:nth-child(even) {
+    gap: 0;
+    padding-left: 12.760vw;
+  }
+}
+
+@media (min-width: 600px){
+  #project-blocks-wrapper .project-block:nth-child(odd) {
+    padding-right: 12.760vw;
+  }
 }
 
 //// PROJECTS MOBILE
@@ -883,9 +894,9 @@ time.wp-block-latest-posts__post-date {
   padding-bottom: 1.346rem;
 }
 
-.entry-content {
-  padding: 0 8%;
-}
+  .entry-content {
+    padding: 0 8%;
+  }
 
 .parent-page-title {
   font-size: 1.563vw;
@@ -904,6 +915,13 @@ time.wp-block-latest-posts__post-date {
 .subtitle { 
   font-size: 2.813vw;
   line-height: 3.299vw;
+}
+
+@media (max-width: 480px) {
+  .subtitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 // CATEGORY PAGE
