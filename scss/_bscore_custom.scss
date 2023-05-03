@@ -340,8 +340,10 @@ div#logo-bottom::before {
 }
 
 // Fix menu item spacing
-.navbar-nav {
-  margin-left: 1.5rem;
+@media (min-width: 480px){
+  .navbar-nav {
+    margin-left: 1.5rem;
+  }
 }
 
 .menu-item {
@@ -440,8 +442,8 @@ img.onion {
 }
 
 .bootscore-footer {
-  font-size: 22px;
-  line-height: 25.81px;
+  font-size: 1.146vw;
+  line-height: 1.344vw;
 }
 
 .bottom-footer {
@@ -457,13 +459,27 @@ img.onion {
   background: linear-gradient(0deg, #0000FF 0.5%, #0909ff 0.5%, #2020ff 1%, #4242ff 5%, #6a6aff, #9595ff, #bdbdff, #dfdfff, #f6f6ff, #ffffff 30%);
 }
 
-h4 {
+footer h4 {
   font-family: 'Work Sans';
   font-style: italic;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 1.563vw;
   text-transform: capitalize;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+@media (max-width: 768px) {
+  .bootscore-footer {
+    font-size: 22px;
+    line-height: 25.81px;
+  }
+  footer h4 {
+    font-size: 30px;
+  }
+}
+
+footer h2 {
+  padding-bottom: 0;
 }
 
 // HOME PAGE
@@ -534,7 +550,6 @@ h4 {
   padding-bottom: 0;
   margin-bottom: 0;
   line-height: 0.75em;
-  font-size: 3.25vw !important;
   // max-width: 32vw;
 }
 
@@ -590,7 +605,6 @@ h4 {
   text-transform: uppercase;
 }
 
-
 .publication-block img {
   width: auto;
   height: 20vw;
@@ -617,6 +631,30 @@ h4 {
   text-transform: none;
   font-weight: 300;
   line-height: 2rem;
+}
+
+.subtitle-book { 
+  font-size: 2.813vw;
+  line-height: 3.299vw;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+  .subtitle-book {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+#publications-block-wrapper {
+  margin: 30px;
+}
+
+@media (max-width: 480px) {
+  #publications-block-wrapper {
+    margin: 20px;
+  }
 }
 
 //// PUBLICATIONS MOBILE
@@ -812,15 +850,6 @@ time.wp-block-latest-posts__post-date {
 .subtitle { 
   font-size: 2.813vw;
   line-height: 3.299vw;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-@media (max-width: 480px) {
-  .subtitle {
-    font-size: 20px;
-    line-height: 1;
-  }
 }
 
 // CATEGORY PAGE
