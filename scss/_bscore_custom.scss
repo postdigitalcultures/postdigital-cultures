@@ -98,7 +98,8 @@ h1 {
 h2 {
   font-size: 1.563vw;
   font-weight: 400;
-  padding-bottom: 1.875rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   text-transform: uppercase;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
@@ -111,9 +112,8 @@ h2 {
   }
 }
 
-// Add margin top to home headings
-.home h1 {
-  padding-top: 2rem;
+.home h2 {
+  padding-left: 8%;
 }
 
 /// COLLAPSIBLE TEXT
@@ -162,6 +162,7 @@ h2 {
   .collapseomatic_content img {
     object-fit: cover;
     width: 23.438vw;
+    height: 23.438vw;
   }
 }
 
@@ -489,11 +490,6 @@ footer h2 {
   padding: 0;
 }
 
-.home h1 {
-  padding-left: 8%;
-  padding-bottom: 3rem;
-}
-
 .home .wp-block-latest-posts.wp-block-latest-posts__list li {
   padding-left: 8%;
   padding-top: 1.923rem;
@@ -639,13 +635,14 @@ footer h2 {
 }
 
 .publication-block img {
-  width: auto;
-  height: 20vw;
+  width: 12.24vw;
+  height: auto;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
   .publication-block img {
-    height: 42vw;
+    width: 38vw;
   }
 }
 
@@ -666,6 +663,12 @@ footer h2 {
   line-height: 2rem;
 }
 
+@media (min-width: 480px) {
+  .publication-block p {
+    margin-right: 20px;
+  }
+}
+
 .subtitle-book { 
   font-size: 2.813vw;
   line-height: 3.299vw;
@@ -680,13 +683,31 @@ footer h2 {
   }
 }
 
-#publications-block-wrapper {
-  margin: 30px;
+.publications-block {
+  margin-bottom: 0;
+  gap: 0;
 }
 
 @media (max-width: 480px) {
-  #publications-block-wrapper {
-    margin: 20px;
+  .publication-block {
+    margin-bottom: 80px;
+  }
+}
+
+.publications-block {
+  padding-left: 30px;
+}
+
+.publication-block {
+  padding-right: 30px;
+}
+
+@media (max-width: 480px) {
+  .publications-block {
+    padding-left: 20px;
+  }
+  .publication-block {
+    padding-right: 30px;
   }
 }
 
@@ -742,7 +763,7 @@ footer h2 {
 
 @media (min-width: 900px){
   .project-block {
-    height: 30rem;
+    height: 47.135vw;
   }
 }
 
@@ -914,8 +935,12 @@ a.badge.text-bg-secondary.text-decoration-none {
 
 // COVER IMAGES FOR PAGES
 
+figure {
+  margin: 0 0 0;
+}
+
 .cover-img {
-  margin-bottom: 7.692rem;
+  margin: 0 0 1rem;
 }
 
 @media (max-width: 992px) {
