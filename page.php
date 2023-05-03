@@ -16,7 +16,7 @@
 get_header();
 ?>
 
-<div id="content" class="site-content container py-5">
+<div id="content" class="site-content container">
   <div id="primary" class="content-area">
 
     <!-- Hook to add something nice -->
