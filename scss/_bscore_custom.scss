@@ -765,6 +765,48 @@ footer h2 {
   text-indent: 0 !important;
 }
 
+//// PUBLICATIONS IMAGES
+
+.publication-block:hover img, .publication-block:focus img, .publication-block:active img {
+  width: 12.24vw;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px){
+  .publication-block:hover img, .publication-block:focus img, .publication-block:active img {
+    width: 38vw;
+  }
+}
+
+.hospitality-terror:hover img, .hospitality-terror:focus img, .hospitality-terror:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_publication_1.1.png');
+}
+
+.game-science:hover img, .game-science:focus img, .game-science:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_publication_2.1.png');
+}
+
+.living-books:hover img, .living-books:focus img, .living-books:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_publication_3.1.png');
+}
+
+.pirate-philosophy:hover img, .pirate-philosophy:focus img, .pirate-philosophy:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_publication_4.1.png');
+}
+
+.digital-future:hover img, .digital-future:focus img, .digital-future:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_publication_5.1.png');
+}
+
+.digital-feeling:hover img, .digital-feeling:focus img, .digital-feeling:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_publication_6.1.png');
+}
+
+.postfeminism:hover img, .postfeminism:focus img, .postfeminism:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_publication_7.1.png');
+}
+
 /// PROJECTS (IMAGES AND TEXT IN TWO COLUMNS)
 
 @media (min-width: 900px){
@@ -810,13 +852,13 @@ footer h2 {
 @media (min-width: 600px){
   #project-blocks-wrapper .project-block:nth-child(even) {
     gap: 0;
-    padding-left: 12.760vw;
+    margin-left: 12.760vw;
   }
 }
 
 @media (min-width: 600px){
   #project-blocks-wrapper .project-block:nth-child(odd) {
-    padding-right: 12.760vw;
+    margin-right: 12.760vw;
   }
 }
 
@@ -824,14 +866,90 @@ footer h2 {
 
 @media (max-width: 600px){
   .project-block .wp-block-column:nth-child(even) {
-    padding-left: 20%;
+    margin-left: 20%;
   }
 }
 
 @media (max-width: 600px){
   .project-block .wp-block-column:nth-child(odd) {
-    padding-right: 20%;
+    margin-right: 20%;
   }
+}
+
+//// PROJECTS IMAGES
+
+.project-block:hover .wp-block-image, .project-block:focus .wp-block-image, .project-block:active .wp-block-image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1.5;
+}
+
+.project-1:hover img, .project-1:focus img, .project-1:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_1.1.jpg');
+}
+
+.project-2:hover img, .project-2:focus img, .project-2:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_2.1.jpg');
+}
+
+.project-3:hover img, .project-3:focus img, .project-3:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_3.1.jpg');
+}
+
+.project-4:hover img, .project-4:focus img, .project-4:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_4.1.jpg');
+}
+
+.project-5:hover img, .project-5:focus img, .project-5:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_5.1.jpg');
+}
+
+.project-6:hover img, .project-6:focus img, .project-6:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_6.1.jpg');
+}
+
+.project-7:hover img, .project-7:focus img, .project-7:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_7.1.jpg');
+}
+
+.project-8:hover img, .project-8:focus img, .project-8:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_8.1.jpg');
+}
+
+.project-9:hover img, .project-9:focus img, .project-9:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_9.1.jpg');
+}
+
+.project-10:hover img, .project-10:focus img, .project-10:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_10.1.jpg');
+}
+
+.project-11:hover img, .project-11:focus img, .project-11:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_11.1.jpg');
+}
+
+.project-12:hover img, .project-12:focus img, .project-12:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_12.1.jpg');
+}
+
+.project-13:hover img, .project-13:focus img, .project-13:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_13.1.jpg');
+}
+
+.project-14:hover img, .project-14:focus img, .project-14:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_14.1.jpg');
+}
+
+.project-15:hover img, .project-15:focus img, .project-15:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_15.1.jpg');
+}
+
+.project-16:hover img, .project-16:focus img, .project-16:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_16.1.jpg');
+}
+
+.project-17:hover img, .project-17:focus img, .project-17:active img {
+	content:url('/wp-content/uploads/2023/05/CPC_Projects_17.1.jpg');
 }
 
 /// NEWS/EVENTS (LATEST POSTS)
