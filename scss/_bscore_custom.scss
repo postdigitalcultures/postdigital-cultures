@@ -627,9 +627,6 @@ footer h2 {
 /// PUBLICATIONS (MEDIA-TEXT BLOCKS IN TWO COLUMNS)
 
 .publication-block {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   line-height: 3.25rem;
@@ -659,9 +656,6 @@ footer h2 {
 
 .publication-block:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.2) 0%, rgba(252, 252, 255, 0.21) 31%, rgba(242, 242, 255, 0.24) 45%, rgba(226, 226, 255, 0.29) 57%, rgba(203, 203, 255, 0.36) 66%, rgba(173, 173, 255, 0.45) 74%, rgba(137, 137, 255, 0.57) 82%, rgba(93, 93, 255, 0.71) 89%, rgba(44, 44, 255, 0.86) 95%, #0000FF 100%);
-  filter: none;
-  -webkit-filter: none;
-  -moz-filter: none;
 }
 
 .publication-block .has-large-font-size {
@@ -877,6 +871,12 @@ footer h2 {
 }
 
 //// PROJECTS IMAGES
+
+.project-block .wp-block-image, .project-block .wp-block-image, .project-block .wp-block-image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1.5;
+}
 
 .project-block:hover .wp-block-image, .project-block:focus .wp-block-image, .project-block:active .wp-block-image {
   width: 100%;
