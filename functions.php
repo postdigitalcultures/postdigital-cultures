@@ -242,18 +242,18 @@ function custom_javascript() {
           console.error(error);
         }
 
-        try {
-          // jQuery to wrap publication-blocks in their own div
-          jQuery(".publications-block").wrapAll( "<div id='publications-block-wrapper' />");
-          // select that div
-          var collection = document.querySelector('#publications-block-wrapper');
-          // randomise the children of that wrapper div
-          for (var i = collection.children.length; i >= 0; i--) {
-            collection.appendChild(collection.children[Math.random() * i | 0]);
-          }
-        } catch (error) {
-          console.error(error);
-        }
+        // try {
+        //   // jQuery to wrap publication-blocks in their own div
+        //   jQuery(".publications-block").wrapAll( "<div id='publications-block-wrapper' />");
+        //   // select that div
+        //   var collection = document.querySelector('#publications-block-wrapper');
+        //   // randomise the children of that wrapper div
+        //   for (var i = collection.children.length; i >= 0; i--) {
+        //     collection.appendChild(collection.children[Math.random() * i | 0]);
+        //   }
+        // } catch (error) {
+        //   console.error(error);
+        // }
       </script>
     <?php
 }
