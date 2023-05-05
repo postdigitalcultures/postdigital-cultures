@@ -103,8 +103,6 @@ h1 {
 h2 {
   font-size: 1.563vw;
   font-weight: 400;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
   text-transform: uppercase;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
@@ -119,20 +117,20 @@ h2 {
 
 .home h2 {
   padding-left: 8%;
+  padding-bottom: 3rem;
 }
 
 h3 {
-  font-size: 1.563vw;
-  line-height: 1.104vw;
-  font-weight: 400;
-  text-transform: uppercase;
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 2rem;
+  padding-top: 2.604vw;
+  padding-bottom: 2.604vw;
 }
 
 @media (max-width: 768px) {
   h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
@@ -198,6 +196,7 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
   right: 20%;
   width: 132%;
   margin: 0;
+  margin-bottom: 2rem;
 }
 
 // NAVBAR
@@ -733,7 +732,7 @@ footer h2 {
   }
 }
 
-figure.wp-block-image {
+.book-cover {
   margin-bottom: 20px;
 }
 
