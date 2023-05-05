@@ -695,6 +695,7 @@ footer h2 {
   line-height: 3.299vw;
   text-transform: uppercase;
   margin-bottom: 30px;
+  padding-top: 1vw;
 }
 
 @media (max-width: 480px) {
@@ -1040,9 +1041,9 @@ time.wp-block-latest-posts__post-date {
   font-weight: 400;
   font-size: 20px;
   line-height: 105.99%;
-  /* or 32px */
   text-transform: capitalize;
-  padding-bottom: 1.346rem;
+  position: relative;
+  z-index: 1;
 }
 
   .entry-content {
@@ -1066,6 +1067,7 @@ time.wp-block-latest-posts__post-date {
 .subtitle { 
   font-size: 2.813vw;
   line-height: 3.299vw;
+  padding-top: 1vw;
 }
 
 @media (max-width: 480px) {
@@ -1128,6 +1130,7 @@ figure {
   width: 100vw;
   height: 50vw;
   object-fit: cover;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
