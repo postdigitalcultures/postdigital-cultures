@@ -73,8 +73,8 @@ h1 {
   font-family: 'Work Sans';
   font-style: italic;
   font-weight: 300;
-  font-size: 11.563vw;
-  line-height: 8.698vw;
+  font-size: 7.563vw;
+  line-height: 5.698vw;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
 }
 
@@ -1094,7 +1094,7 @@ a.badge.text-bg-secondary.text-decoration-none {
   text-transform: uppercase;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
-  background-color: var(--bs-light) !important;
+  background-color: transparent !important;
 }
 
 .post-date {
