@@ -124,8 +124,9 @@ h2 {
 }
 
 .home h2 {
-  padding-left: 8%;
-  padding-bottom: 6%;
+  padding-left: 7.656vw;
+  padding-bottom: 9.219vw;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -604,7 +605,7 @@ footer h2 {
 }
 
 .insert-page-29 .wp-block-columns .research-group-block:nth-child(odd) p {
-  padding: 0 0 0 1%;
+  padding: 0 0 0 1.563vw;
 }
 
 @media (min-width: 768px) {
@@ -626,7 +627,7 @@ footer h2 {
   display: flex;
   justify-content: inherit;
   align-items: flex-end;
-  padding: 0 0 0 1%;
+  padding: 0 0 0 1.042vw;
 }
 
 :where(.insert-page-29 .wp-block-columns){
@@ -766,6 +767,11 @@ footer h2 {
 
 //// PUBLICATIONS ZOTERO PLUGIN
 
+
+.zp-Zotpress {
+  padding-top: 3.219vw;
+}
+
 .zp-Entry {
   text-decoration: none;
   font-weight: 400;
@@ -865,10 +871,22 @@ footer h2 {
   margin-bottom: 0;
 }
 
+.project-block p {
+  padding-left: 1.042vw;
+}
+
 .project-block .has-large-font-size {
   font-style: italic;
   font-weight: 300;
   line-height: 2rem;
+}
+
+#project-blocks-wrapper {
+  padding-top: 5.219vw;
+}
+
+.home #project-blocks-wrapper {
+  padding-top: 0;
 }
 
 @media (min-width: 600px){
@@ -1050,7 +1068,7 @@ time.wp-block-latest-posts__post-date {
 }
 
   .entry-content {
-    padding: 0 8%;
+    padding: 0 7.656vw;
   }
 
 .parent-page-title {
