@@ -92,23 +92,9 @@ h1 {
   }
 }
 
-.entry-content h1 {
+.home h1 {
   font-family: 'Work Sans';
   font-style: normal;
-  font-weight: 400;
-  font-size: 1.563vw;
-  text-transform: uppercase;
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
-}
-
-@media (max-width: 768px) {
-  .entry-content h1 {
-    font-size: 26px;
-  }
-}
-
-.home h1 {
   padding-left: 7.656vw;
   padding-bottom: 9.219vw;
   margin-bottom: 0;
@@ -117,6 +103,12 @@ h1 {
   text-transform: uppercase;
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 26px;
+  }
 }
 
 h2 {
