@@ -30,14 +30,14 @@ get_header();
           <header class="entry-header">
             <?php the_post(); ?>
             <!-- Parent page title -->
-            <div class="parent-page-title text-secondary">
-              <?php
-                $parent_title = get_the_title($post->post_parent);
-                $title = get_the_title($post);
-                if ($parent_title != $title)
-                  echo $parent_title;
-              ?>
-            </div>
+            <?php
+              $parent_title = get_the_title($post->post_parent);
+              $title = get_the_title($post);
+              if ($parent_title != $title) :?>
+                <div class="parent-page-title text-secondary">
+                  <?php echo $parent_title; ?>
+                </div>
+              <?php endif; ?>
             <!-- Title -->
             <?php the_title('<h1>', '</h1>'); ?>
             <!-- Featured Image-->

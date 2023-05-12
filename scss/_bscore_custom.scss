@@ -98,9 +98,9 @@ h1 {
   font-family: 'Work Sans';
   font-style: normal;
   padding-left: 7.656vw;
-  padding-bottom: 9.219vw;
   margin-bottom: 0;
   font-size: 1.563vw;
+  line-height: 1.656vw;
   font-weight: 400;
   text-transform: uppercase;
   --bs-text-opacity: 1;
@@ -514,6 +514,10 @@ footer h2 {
   padding: 0;
 }
 
+.home .wp-block-latest-posts__list {
+  padding-top: 3.219vw;
+}
+
 .home .wp-block-latest-posts.wp-block-latest-posts__list li {
   padding-top: 1.923rem;
   padding-bottom: 1.923rem;
@@ -538,6 +542,9 @@ footer h2 {
   font-weight: 800;
 }
 
+.home .insert-page {
+  padding-top: 9.219vw;
+}
 
 /// RESEARCH GROUPS (TWO COLUMNS BLOCK)
 
