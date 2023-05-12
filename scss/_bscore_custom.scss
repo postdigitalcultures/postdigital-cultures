@@ -108,7 +108,10 @@ h1 {
   }
 }
 
-h2 {
+.home h1 {
+  padding-left: 7.656vw;
+  padding-bottom: 9.219vw;
+  margin-bottom: 0;
   font-size: 1.563vw;
   font-weight: 400;
   text-transform: uppercase;
@@ -116,20 +119,7 @@ h2 {
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
 }
 
-@media (max-width: 768px) {
-  h2 {
-    font-size: 22px;
-    padding-bottom: 0;
-  }
-}
-
-.home h2 {
-  padding-left: 7.656vw;
-  padding-bottom: 9.219vw;
-  margin-bottom: 0;
-}
-
-h3 {
+h2 {
   font-style: italic;
   font-weight: 300;
   line-height: 2.708vw;
@@ -138,11 +128,27 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  h3 {
+  h2 {
     font-size: 24px;
     line-height: 28.8px;
   }
 }
+
+h3 {
+  font-size: 1.563vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 22px;
+    padding-bottom: 0;
+  }
+}
+
 
 /// COLLAPSIBLE TEXT
 
