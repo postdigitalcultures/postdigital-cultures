@@ -16,7 +16,7 @@
 
 <footer>
 
-  <div class="bootscore-footer pt-5 pb-3 text-primary">
+  <div class="bootscore-footer text-primary">
 
     <!-- Top Footer Widget -->
     <?php if (is_active_sidebar('top-footer')) : ?>
@@ -25,9 +25,9 @@
       </div>
     <?php endif; ?>
 
-    <div class="d-md-flex flex-md-row mb-3">
+    <div class="d-md-flex flex-md-row">
       <!-- Footer 1 Widget -->
-      <div class="me-auto p-2 md d-none d-md-block">
+      <div class="me-auto px-2 md d-none d-md-block">
         <?php if (is_active_sidebar('footer-1')) : ?>
           <div>
             <?php dynamic_sidebar('footer-1'); ?>
@@ -35,7 +35,7 @@
         <?php endif; ?>
       </div>
       <!-- Footer 2 Widget -->
-      <div class="p-2 px-5">
+      <div class="px-5">
         <?php if (is_active_sidebar('footer-2')) : ?>
           <div>
             <?php dynamic_sidebar('footer-2'); ?>
@@ -43,7 +43,7 @@
         <?php endif; ?>
       </div>
       <!-- Footer 3 Widget -->
-      <div class="p-2 px-5">
+      <div class="px-5">
         <?php if (is_active_sidebar('footer-3')) : ?>
           <div>
             <?php dynamic_sidebar('footer-3'); ?>
@@ -76,7 +76,7 @@
 
     </div>
 
-  <div class="bootscore-info bg-light py-2 text-center text-primary">
+  <div id="footer-gradient" class="bootscore-info bg-light text-center text-primary">
     <?php if (is_active_sidebar('bottom-footer')) : ?>
       <div class="container bottom-footer">
         <?php dynamic_sidebar('bottom-footer'); ?>

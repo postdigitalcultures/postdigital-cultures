@@ -23,7 +23,15 @@ pre {
 }
 
 body {
+  font-size: 1.354vw;
   line-height: 120%;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 20px;
+    line-height: 130%;
+  }
 }
 
 @media (max-width: 1920px) {
@@ -231,7 +239,8 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
 }
 
 .navbar-brand {
-    font-size: 1.346rem;
+  font-size: 1.346rem;
+  line-height: 91%;
 }
 
 #logo-top {
@@ -443,15 +452,24 @@ img.onion {
 }
 
 .bottom-footer {
-  font-size: 14px;
-  line-height: 16.42px;
+  font-size: 0.729vw;
+  line-height: 0.855vw;
+  padding-top: 0;
+  padding-bottom: 2.708vw;
+}
+
+@media (max-width: 768px) {
+  .bottom-footer {
+    font-size: 14px;
+    line-height: 16.42px;
+  }
 }
 
 .bottom-footer p {
   margin-bottom: 0;
 }
 
-.bootscore-info.bg-light.py-2.text-center.text-primary {
+#footer-gradient {
   background: linear-gradient(0deg, #0000FF 0.5%, #0909ff 0.5%, #2020ff 1%, #4242ff 5%, #6a6aff, #9595ff, #bdbdff, #dfdfff, #f6f6ff, #ffffff 30%);
 }
 
@@ -472,10 +490,13 @@ footer h4 {
   footer h4 {
     font-size: 30px;
   }
+  footer h2 {
+    padding-bottom: 0 !important;
+  }
 }
 
 footer h2 {
-  padding-bottom: 0;
+  padding-left: 0 !important;
 }
 
 // HOME PAGE
@@ -512,6 +533,15 @@ footer h2 {
 .research-group-block {
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
   text-decoration: none;
+  font-size: 3.125vw;
+  line-height: 76.667%;
+}
+
+@media (max-width: 768px) {
+  .research-group-block {
+    font-size: 40px;
+    line-height: 30px;
+  }
 }
 
 .research-group-block a {
