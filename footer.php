@@ -51,7 +51,7 @@
         <?php endif; ?>
       </div>
       <!-- Footer 4 Widget -->
-      <div class="p-2 px-5">
+      <div class="px-5">
         <?php if (is_active_sidebar('footer-4')) : ?>
           <div>
             <?php dynamic_sidebar('footer-4'); ?>
