@@ -1263,7 +1263,7 @@ figure {
 }
 
 .wp-block-image figure > figcaption {
-  display: flex;
+  display: flex !important;
   font-style: italic;
   font-size: smaller;
   text-align: center;
