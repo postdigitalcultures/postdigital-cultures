@@ -861,8 +861,7 @@ footer h2 {
 
 @media (min-width: 900px){
   .project-block {
-    //height: 47.135vw;
-    height: 55.135vw;
+    height: 47.135vw;
   }
 }
 
@@ -923,6 +922,7 @@ footer h2 {
 
 @media (min-width: 600px){
   #project-blocks-wrapper .project-block:nth-child(odd) {
+    gap: 5.104vw;
     margin-right: 12.760vw;
   }
 }
@@ -1223,7 +1223,7 @@ div:has(> .newsletter-block) {
 }
 
   .entry-content {
-    padding: 0 7.656vw;
+    padding: 0 7.708vw;
   }
 
 .parent-page-title {
