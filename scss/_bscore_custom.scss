@@ -321,8 +321,14 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
 }
 
 .dropdown-item:hover, .dropdown-item:focus .dropdown-item:active {
-  font-weight: 800;
-  background-color: transparent;
+  //font-weight: 800;
+  color: #0000FF !important;
+  background-color: transparent !important;
+}
+
+.dropdown-item.active {
+  color: #0000FF !important;
+  background-color: transparent !important;
 }
 
 // Add gradient below logo (extended version)
@@ -668,7 +674,6 @@ footer h2 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   line-height: 3.25rem;
-  text-transform: uppercase;
   display: flex;
   margin: 0;
   font-size: 0.769rem;
@@ -801,16 +806,6 @@ footer h2 {
   padding-bottom: 1.5rem;
 }
 
-.zp-List .zp-Entry:nth-child(odd) {
-  padding-right: 15vw;
-  text-align: left;
-}
-
-.zp-List .zp-Entry:nth-child(even) {
-  padding-left: 15vw;
-  text-align: right;
-}
-
 .csl-bib-body {
   text-indent: 0 !important;
 }
@@ -862,6 +857,12 @@ footer h2 {
 @media (min-width: 900px){
   .project-block {
     height: 47.135vw;
+  }
+}
+
+@media (min-width: 900px){
+  .home .project-block {
+    height: 55.135vw;
   }
 }
 
@@ -1230,9 +1231,13 @@ div:has(> .newsletter-block) {
   z-index: 1;
 }
 
-  .entry-content {
-    padding: 0 7.708vw;
-  }
+.entry-content {
+  padding: 0 7.708vw;
+}
+
+.entry-content > .wp-block-columns {
+  //padding: 0 7.708vw;
+}
 
 .parent-page-title {
   font-size: 1.563vw;
