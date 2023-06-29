@@ -238,6 +238,12 @@ function custom_javascript() {
           for (var i = collection.children.length; i >= 0; i--) {
             collection.appendChild(collection.children[Math.random() * i | 0]);
           }
+          if (jQuery("body").hasClass("home")) {
+            // remove all but 6 children from the wrapper
+            for (var x = collection.children.length - 1; x >= 3; x--) {
+              collection.children[x].remove()
+            }
+          }
         } catch (error) {
           console.error(error);
         }
