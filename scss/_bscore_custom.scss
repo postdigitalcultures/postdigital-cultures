@@ -115,6 +115,11 @@ h1 {
   }
 }
 
+.home h1 a {
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  text-decoration: none !important;
+}
+
 h2 {
   font-style: italic;
   font-weight: 300;
