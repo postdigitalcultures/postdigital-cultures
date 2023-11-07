@@ -325,7 +325,7 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
   padding-bottom: 0;
 }
 
-.dropdown-item:hover, .dropdown-item:focus .dropdown-item:active {
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active {
   //font-weight: 800;
   color: #0000FF !important;
   background-color: transparent !important;
@@ -334,6 +334,13 @@ hr.wp-block-separator.has-alpha-channel-opacity.is-style-wide {
 .dropdown-item.active {
   color: #0000FF !important;
   background-color: transparent !important;
+}
+
+@media (max-width: 992px){
+  .dropdown-item.hover, .dropdown-item.focus, .dropdown-item.active {
+    color: #EEEEEE !important;
+    font-weight: 800;
+  }
 }
 
 // Add gradient below logo (extended version)
