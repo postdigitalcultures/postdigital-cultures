@@ -55,6 +55,8 @@ get_header();  ?>
             </nav>-->
           </footer>
 
+          <?php comments_template(); ?>
+        
         </main> <!-- #main -->
 
       </div><!-- col -->

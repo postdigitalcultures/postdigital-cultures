@@ -1347,6 +1347,18 @@ div:has(> .newsletter-block) {
   padding-left: 9%;
 }
 
+#comments {
+  padding: 0 7.708vw;
+}
+
+textarea#comment {
+  font-size: 0.7rem;
+}
+
+input#commentsubmit {
+  font-size: 0.7rem;
+}
+
 // COVER IMAGES FOR PAGES
 
 figure {
