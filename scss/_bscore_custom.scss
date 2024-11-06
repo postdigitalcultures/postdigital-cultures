@@ -1213,6 +1213,12 @@ a.badge.text-bg-secondary.text-decoration-none {
 
 /// OTHER LATEST POSTS BLOCKS
 
+.wp-block-latest-posts__post-excerpt {
+  font-size: 1.042vw;
+  padding-left: 2vw;
+  padding-right: 1.5vw;
+}
+
 .page-template-default:not(.home) > * .wp-block-latest-posts__list {
   background: none;
   padding: 50px 0 50px 0;
@@ -1235,11 +1241,7 @@ a.badge.text-bg-secondary.text-decoration-none {
 }
 
 .page-template-default:not(.home) > * .wp-block-latest-posts__featured-image img {
-  padding-left: 2vw;
-}
-
-.wp-block-latest-posts__post-excerpt {
-  font-size: 1.042vw;
+  padding-left: 2.5vw;
 }
 
 .page-template-default:not(.home) > * .wp-block-latest-posts__featured-image + a.wp-block-latest-posts__post-title {
