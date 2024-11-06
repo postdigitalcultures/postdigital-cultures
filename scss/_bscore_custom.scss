@@ -1177,6 +1177,7 @@ time.wp-block-latest-posts__post-date {
 }
 
 .post-date {
+  font-style: normal;
   text-transform: uppercase;
   font-size: 1.042vw;
 }
@@ -1214,15 +1215,13 @@ a.badge.text-bg-secondary.text-decoration-none {
 
 #page > * .wp-block-latest-posts__list {
   background: none;
-  padding: 50px 0 50px 0;
   font-style: italic;
   font-weight: 300;
   font-size: 2.525vw;
   line-height: 2.08vw;
   display: block;
-  width: 132%;
+  width: 120%;
   position: relative;
-  right: 10%;
 }
 
 #page > * a.wp-block-latest-posts__post-title {
@@ -1233,9 +1232,17 @@ a.badge.text-bg-secondary.text-decoration-none {
   font-style: normal;
 }
 
-#page > * .wp-block-latest-posts__featured-image img {
-  padding-left: 2vw;
-}
+// #page > * .wp-block-latest-posts__featured-image img {
+//   padding-left: 2vw;
+// }
+
+// .wp-block-latest-posts__post-excerpt {
+//   font-size: 1.042vw;
+// }
+
+// #page > * .wp-block-latest-posts__featured-image + a.wp-block-latest-posts__post-title {
+//   padding-left: 2vw;
+// }
 
 /// NEWSLETTERS (TWO COLUMNS BLOCK)
 
