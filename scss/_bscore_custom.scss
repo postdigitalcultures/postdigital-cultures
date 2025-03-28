@@ -1255,6 +1255,9 @@ a.badge.text-bg-secondary.text-decoration-none {
   .page-template-default:not(.home) > * a.wp-block-latest-posts__post-title {
     width: 90%;
   }
+  .page-template-default:not(.home) > * .wp-block-latest-posts__featured-image {
+    width: 50%; 
+  }
 }
 
 /// NEWSLETTERS (TWO COLUMNS BLOCK)
